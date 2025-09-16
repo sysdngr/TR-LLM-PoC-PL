@@ -4,7 +4,7 @@ import json
 from sql_agent import PremierLeagueSQLAgent
 
 class LLMOrchestrator:
-	def _stringify(self, value):
+	def stringify(self, value):
 		if isinstance(value, (dict, list)):
 			try:
 				return json.dumps(value)
@@ -22,42 +22,69 @@ class LLMOrchestrator:
 		self.model      = os.environ.get("OPENAI_MODEL_MAIN")
 		# Initialize conversation history
 		self.conversation_history = []  # List of (user_input, response) tuples
+		self.sql_agent = PremierLeagueSQLAgent("premier_league_players_master.db")
+
+	def make_api_call(self, messages, max_tokens):
+		"""
+		Helper method to make API calls to avoid duplication in classify + handle_general
+		Args:
+			messages (list): The messages to send in the API request.
+			max_tokens (int): The maximum number of tokens for the response.
+		Returns:
+			str: The response content from the API, or an error message.
+		"""
+		url = f"{self.endpoint}/openai/deployments/{self.deployment}/chat/completions?api-version={self.api_version}"
+		headers = {"Content-Type": "application/json", "api-key": self.key}
+		payload = {
+			"messages": messages,
+			"max_tokens": max_tokens,
+			"model": self.model
+		}
+		try:
+			print("[API CALL] Sending request to Azure OpenAI...")
+			resp = requests.post(url, headers=headers, json=payload, timeout=30)
+			resp.raise_for_status()  # Raise an HTTPError for bad responses (4xx and 5xx)
+			data = resp.json()
+			return data["choices"][0]["message"]["content"].strip()
+		except requests.exceptions.RequestException as e:
+			print(f"[API CALL] Error: {str(e)}")
+			return f"[ERROR] {str(e)}"
 
 	def classify_query(self, user_input):
 		"""
-		Uses LLM with a system prompt to classify the query.
-		Returns: "general" or "sql_required"
+		Classify the user query as either 'general' or 'sql_required'.
 		"""
 		print(f"\n[CLASSIFY] Input: {user_input}")
-		
 		system_prompt = (
 			"You are an expert assistant. "
 			"If the user's query is about Premier League players or teams, especially for the 2025/2026 season, "
 			"reply ONLY with 'sql_required'. If not, reply ONLY with 'general'. Do not explain your answer."
 		)
-		url = f"{self.endpoint}/openai/deployments/{self.deployment}/chat/completions?api-version={self.api_version}"
-		headers = {"Content-Type": "application/json", "api-key": self.key}
 		messages = [
 			{"role": "system", "content": system_prompt},
 			{"role": "user", "content": user_input}
 		]
-		payload = {
-			"messages": messages,
-			"max_tokens": 128,
-			"model": self.model
-		}
-		print("[CLASSIFY] Sending classification request to LLM...")
-		resp = requests.post(url, headers=headers, json=payload, timeout=10)
-		if resp.ok:
-			data = resp.json()
-			result = data["choices"][0]["message"]["content"].strip().lower()
-			print(f"[CLASSIFY] LLM response: {result}")
-			if "sql_required" in result:
-				return "sql_required"
-			return "general"
-		else:
-			print(f"[CLASSIFY] Error: {resp.text}")
-			return "general"  # fallback
+		result = self.make_api_call(messages, max_tokens=128)
+		print(f"[CLASSIFY] LLM response: {result}")
+		return "sql_required" if "sql_required" in result.lower() else "general"
+
+	def execute_query(self, user_input):
+		"""
+		Execute the SQL query using the SQL agent and return the results.
+		"""
+		print("[EXECUTE] Running SQL agent...")
+		recent_context = self.conversation_history[-3:]  # Last 3 turns
+		sql_result = self.sql_agent.run(user_input, conversation_history=recent_context)
+		print(f"[EXECUTE] SQL agent result received: {str(sql_result)[:100]}...")  # First 100 chars
+		return sql_result
+
+	def generate_response(self, user_input, sql_result=None):
+		"""
+		Generate the final response based on the query type and results.
+		"""
+		if sql_result:
+			return self.handle_general_query(user_input, context=sql_result)
+		return self.handle_general_query(user_input)
 
 	def handle_general_query(self, user_input, context=None):
 		"""
@@ -67,8 +94,6 @@ class LLMOrchestrator:
 		if context:
 			print(f"[GENERAL] With context: {context}")
 		
-		url = f"{self.endpoint}/openai/deployments/{self.deployment}/chat/completions?api-version={self.api_version}"
-		headers = {"Content-Type": "application/json", "api-key": self.key}
 		messages = []
 
 		# Add conversation history
@@ -77,107 +102,51 @@ class LLMOrchestrator:
 			print(f"[GENERAL] Adding {history_count} historical messages...")
 			for prev_input, prev_response in self.conversation_history[-3:]:
 				messages.extend([
-					{"role": "user", "content": self._stringify(prev_input)},
-					{"role": "assistant", "content": self._stringify(prev_response)}
+					{"role": "user", "content": self.stringify(prev_input)},
+					{"role": "assistant", "content": self.stringify(prev_response)}
 				])
 
 		# Add current context and query
 		if context:
-			messages.append({"role": "system", "content": self._stringify(context)})
-		messages.append({"role": "user", "content": self._stringify(user_input)})
-		
-		payload = {
-			"messages": messages,
-			"max_tokens": 512,
-			"model": self.model
-		}
-		
-		print("[GENERAL] Sending request to LLM...")
-		resp = requests.post(url, headers=headers, json=payload, timeout=20)
-		if resp.ok:
-			data = resp.json()
-			response = data["choices"][0]["message"]["content"]
-			print(f"[GENERAL] Response received: {response[:100]}...")  # First 100 chars
-			return response
-		else:
-			error = f"[ERROR] {resp.text}"
-			print(f"[GENERAL] Error: {error}")
-			return error
+			messages.append({"role": "system", "content": self.stringify(context)})
+		messages.append({"role": "user", "content": self.stringify(user_input)})
+
+		response = self.make_api_call(messages, max_tokens=512)
+		print(f"[GENERAL] Response received: {response[:100]}...")  # First 100 chars
+		return response
 
 	def generate_final_response(self, user_input, sql_query=None, sql_result=None):
 		"""
-		If SQL query and result are present, generate a summary for structured/tabular data using LLM, unless the data is trivially simple.
-		Otherwise, use LLM for general queries.
+		Strictly return SQL results without any speculative follow-up offers or additional commentary.
+		Format the JSON output in a user-friendly way.
 		"""
-		if sql_query and sql_result:
-			import pandas as pd
-			summary = None
+		if sql_result:
+			import json
 			if isinstance(sql_result, dict):
-				for key, value in sql_result.items():
-					if isinstance(value, list) and value:
-						if len(value) > 2:
-							df = pd.DataFrame(value)
-							context = (
-								f"User question: {user_input}\n"
-								f"Here is the data returned from the database as a table:\n{df.to_string(index=False)}\n"
-								"If the data is self-explanatory, you may simply say so. Otherwise, provide a brief summary or insight for the user."
-							)
-							summary = self.handle_general_query(user_input, context=context)
-						break
-			if summary:
-				return {"summary": summary.strip(), "data": sql_result}
+				# Prettify JSON output for user-friendly display
+				formatted_json = json.dumps(sql_result, indent=4)
+				return f"Here is the information you requested:\n\n```json\n{formatted_json}\n```"
+			elif isinstance(sql_result, list):
+				# Handle list results if applicable
+				return f"Here is the list of results:\n\n{', '.join(map(str, sql_result))}"
 			else:
-				return sql_result
-		else:
-			return self.handle_general_query(user_input)
+				return str(sql_result)
+		
+		# Fallback to general query handling only if no SQL result is available
+		return self.handle_general_query(user_input)
 
-	def process_sql_query(self, user_input):
+	def process_query(self, user_input):
 		"""
-		Main orchestration method: classifies query and triggers SQL agent if needed.
+		Main entry point for processing user queries.
 		"""
 		print(f"\n[PROCESS] Starting to process query: {user_input}")
-		
 		query_type = self.classify_query(user_input)
-		print(f"[PROCESS] Query classified as: {query_type}")
-		
 		if query_type == "sql_required":
-			# Get recent conversation context
-			recent_context = self.conversation_history[-3:]  # Last 3 turns
-			context_count = len(recent_context)
-			print(f"[PROCESS] Using {context_count} recent conversation turns...")
-			
-			print("[PROCESS] Initializing SQL agent...")
-			sql_agent = PremierLeagueSQLAgent("premier_league_players_master.db")
-			sql_query = user_input
-			print("[PROCESS] Running SQL agent...")
-			sql_result = sql_agent.run(user_input, conversation_history=recent_context)
-			print(f"[PROCESS] SQL agent result received: {str(sql_result)[:100]}...")  # First 100 chars
-
-			# Handle agent reply with 'output' key containing JSON string
-			import json
-			parsed_result = None
-			if isinstance(sql_result, dict) and "output" in sql_result:
-				output_val = sql_result["output"]
-				try:
-					parsed_result = json.loads(output_val)
-				except Exception:
-					parsed_result = output_val
-			elif isinstance(sql_result, str):
-				try:
-					parsed_result = json.loads(sql_result)
-				except Exception:
-					parsed_result = sql_result
-			else:
-				parsed_result = sql_result
-
-			print("[PROCESS] Generating final response...")
-			response = self.generate_final_response(user_input, sql_query, parsed_result)
-			self.conversation_history.append((user_input, response))
-			print("[PROCESS] Response added to conversation history")
-			return response
+			sql_result = self.execute_query(user_input)
+			response = self.generate_response(user_input, sql_result)
 		else:
-			print("[PROCESS] Handling as general query...")
-			response = self.generate_final_response(user_input)
-			self.conversation_history.append((user_input, response))
-			print("[PROCESS] Response added to conversation history")
-			return response
+			response = self.generate_response(user_input)
+		self.conversation_history.append((user_input, response))
+		self.conversation_history = self.conversation_history[-10:]  # Limit history to last 10 entries
+		print("[PROCESS] Response added to conversation history")
+		return response

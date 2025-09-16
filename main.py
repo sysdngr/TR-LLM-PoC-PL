@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import sys
+import pandas as pd
 
 try:
     from dotenv import load_dotenv
@@ -9,6 +10,83 @@ except Exception:
     pass
 
 from orchestrator import LLMOrchestrator
+
+def format_dataframe_columns(df):
+    """Apply better formatting to common football data columns"""
+    df_formatted = df.copy()
+    
+    # Format age column
+    if 'age' in df_formatted.columns:
+        df_formatted['age'] = df_formatted['age'].astype(str) + " years"
+    
+    # Capitalize column names for display
+    df_formatted.columns = [col.replace('_', ' ').title() for col in df_formatted.columns]
+    
+    return df_formatted
+
+def display_list(data, title="Results"):
+    """Display a list of data as a table."""
+    df = pd.DataFrame(data)
+    df_formatted = format_dataframe_columns(df)
+
+    st.subheader(title)
+    st.dataframe(df_formatted, use_container_width=True, height=min(400, len(df) * 35 + 50))
+
+    # Commented out the download functionality
+    # csv = df.to_csv(index=False)
+    # st.download_button(
+    #     label=f"Download as CSV ({len(df)} rows)",
+    #     data=csv,
+    #     file_name=f"premier_league_data.csv",
+    #     mime="text/csv",
+    #     key=f"download_{len(st.session_state.history)}"
+    # )
+
+    # Show row count
+    st.caption(f"Showing {len(df)} results")
+
+def display_dict(data):
+    """Display a dictionary of data."""
+    for key, value in data.items():
+        if isinstance(value, list) and value:
+            display_list(value, key.replace('_', ' ').title())
+        else:
+            st.write(f"**{key.replace('_', ' ').title()}:** {value}")
+
+def display_data(data):
+    """Handle all types of data and display appropriately."""
+    if isinstance(data, list):
+        display_list(data)
+    elif isinstance(data, dict):
+        display_dict(data)
+    else:
+        st.markdown(str(data))
+
+def display_response(speaker, response):
+    """Handle all types of responses with proper formatting"""
+    st.markdown(f"**{speaker}:**")
+    
+    if isinstance(response, dict):
+        # Handle structured responses with summary and data
+        if "summary" in response and "data" in response:
+            st.markdown(response["summary"])
+            st.divider()
+            display_data(response["data"])
+        
+        # Handle error responses
+        elif "error" in response:
+            st.error(f"❌ {response['error']}")
+        
+        # Handle other dictionary responses
+        else:
+            display_data(response)
+    
+    elif isinstance(response, list) and response:
+        display_data(response)
+    
+    else:
+        # Handle plain text responses
+        st.markdown(str(response))
 
 st.title("Premier League Query Assistant")
 
@@ -20,6 +98,10 @@ if "input_value" not in st.session_state:
 if "orchestrator" not in st.session_state:
     st.session_state.orchestrator = LLMOrchestrator()
 
+# Limit session state history
+if "history" in st.session_state:
+    st.session_state.history = st.session_state.history[-50:]
+
 def submit():
     """Handle user input and get response from orchestrator"""
     user_input = st.session_state.input_value
@@ -29,61 +111,23 @@ def submit():
         
         try:
             # Process query through orchestrator
-            response = st.session_state.orchestrator.process_sql_query(user_input)
+            response = st.session_state.orchestrator.process_query(user_input)
             st.session_state.history.append(("Assistant", response))
         except Exception as e:
             error_msg = f"Error processing query: {str(e)}"
             st.error(error_msg)
-            st.session_state.history.append(("Assistant", f"[ERROR] {error_msg}"))
+            st.session_state.history.append(("Assistant", {"error": error_msg}))
         
         # Clear input
         st.session_state.input_value = ""
 
-# Show chat history first (top to bottom)
-
-import pandas as pd
-for speaker, text in st.session_state.history:
-    if speaker == "Assistant":
-        # If dict contains 'summary' and 'data', show summary as markdown and data as table
-        if isinstance(text, dict) and "summary" in text and "data" in text:
-            st.markdown(f"**{speaker}:**")
-            st.markdown(text["summary"])
-            data = text["data"]
-            for key, value in data.items():
-                if isinstance(value, list) and value:
-                    if all(isinstance(x, dict) for x in value):
-                        df = pd.DataFrame(value)
-                    elif all(isinstance(x, str) for x in value):
-                        df = pd.DataFrame(value, columns=[key])
-                    else:
-                        df = pd.DataFrame(value)
-                    st.table(df)
-        # If reply is a list of dicts, show as table
-        elif isinstance(text, list) and text and all(isinstance(x, dict) for x in text):
-            st.markdown(f"**{speaker}:**")
-            df = pd.DataFrame(text)
-            st.table(df)
-        else:
-            rendered = False
-            if isinstance(text, dict):
-                for key, value in text.items():
-                    if isinstance(value, list) and value:
-                        st.markdown(f"**{speaker}:** {key}")
-                        if all(isinstance(x, dict) for x in value):
-                            df = pd.DataFrame(value)
-                        elif all(isinstance(x, str) for x in value):
-                            df = pd.DataFrame(value, columns=[key])
-                        else:
-                            df = pd.DataFrame(value)
-                        st.table(df)
-                        rendered = True
-                    elif isinstance(value, str):
-                        st.markdown(f"**{speaker}:** {value}")
-                        rendered = True
-            if not rendered:
-                st.markdown(f"**{speaker}:** {text}")
+# Display chat history with improved formatting
+for speaker, response in st.session_state.history:
+    if speaker == "You":
+        st.markdown(f"**{speaker}:** {response}")
     else:
-        st.markdown(f"**{speaker}:** {text}")
+        display_response(speaker, response)
+    st.divider()  # Add visual separation between exchanges
 
 # Add a hidden anchor for autoscroll
 import streamlit.components.v1 as components

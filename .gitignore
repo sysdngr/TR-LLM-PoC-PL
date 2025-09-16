@@ -1,0 +1,19 @@
+# Environment / secret files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

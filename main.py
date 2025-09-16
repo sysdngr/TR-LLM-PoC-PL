@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-import requests
+import sys
 
 try:
     from dotenv import load_dotenv
@@ -8,53 +8,82 @@ try:
 except Exception:
     pass
 
-endpoint   = os.environ.get("AZURE_OPENAI_MAIN_ENDPOINT")
-key        = os.environ.get("AZURE_OPENAI_MAIN_KEY")
-deployment = os.environ.get("AZURE_OPENAI_MAIN_DEPLOYMENT")
-api_version= os.environ.get("AZURE_OPENAI_MAIN_API_VERSION")
-model      = os.environ.get("OPENAI_MODEL_MAIN")
+from orchestrator import LLMOrchestrator
 
-st.title("Main GPT Chat")
+st.title("Premier League Query Assistant")
 
+# Initialize session state
 if "history" not in st.session_state:
     st.session_state.history = []
 if "input_value" not in st.session_state:
     st.session_state.input_value = ""
+if "orchestrator" not in st.session_state:
+    st.session_state.orchestrator = LLMOrchestrator()
 
 def submit():
+    """Handle user input and get response from orchestrator"""
     user_input = st.session_state.input_value
     if user_input:
+        # Add user message to UI history
         st.session_state.history.append(("You", user_input))
-        url = f"{endpoint}/openai/deployments/{deployment}/chat/completions?api-version={api_version}"
-        headers = {"Content-Type": "application/json", "api-key": key}
         
-        # Build messages with basic context (last few exchanges)
-        messages = []
-        recent_history = st.session_state.history[-6:]  # Last 3 exchanges (6 messages)
+        try:
+            # Process query through orchestrator
+            response = st.session_state.orchestrator.process_sql_query(user_input)
+            st.session_state.history.append(("Assistant", response))
+        except Exception as e:
+            error_msg = f"Error processing query: {str(e)}"
+            st.error(error_msg)
+            st.session_state.history.append(("Assistant", f"[ERROR] {error_msg}"))
         
-        for speaker, text in recent_history:
-            if speaker == "You":
-                messages.append({"role": "user", "content": text})
-            else:
-                messages.append({"role": "assistant", "content": text})
-        
-        payload = {
-            "messages": messages,
-            "max_tokens": 800,
-            "model": model
-        }
-        resp = requests.post(url, headers=headers, json=payload, timeout=20)
-        if resp.ok:
-            data = resp.json()
-            answer = data["choices"][0]["message"]["content"]
-            st.session_state.history.append(("Assistant", answer))
-        else:
-            st.session_state.history.append(("Assistant", f"[ERROR] {resp.text}"))
-        st.session_state.input_value = ""  # Clear input
+        # Clear input
+        st.session_state.input_value = ""
 
 # Show chat history first (top to bottom)
+
+import pandas as pd
 for speaker, text in st.session_state.history:
-    st.markdown(f"**{speaker}:** {text}")
+    if speaker == "Assistant":
+        # If dict contains 'summary' and 'data', show summary as markdown and data as table
+        if isinstance(text, dict) and "summary" in text and "data" in text:
+            st.markdown(f"**{speaker}:**")
+            st.markdown(text["summary"])
+            data = text["data"]
+            for key, value in data.items():
+                if isinstance(value, list) and value:
+                    if all(isinstance(x, dict) for x in value):
+                        df = pd.DataFrame(value)
+                    elif all(isinstance(x, str) for x in value):
+                        df = pd.DataFrame(value, columns=[key])
+                    else:
+                        df = pd.DataFrame(value)
+                    st.table(df)
+        # If reply is a list of dicts, show as table
+        elif isinstance(text, list) and text and all(isinstance(x, dict) for x in text):
+            st.markdown(f"**{speaker}:**")
+            df = pd.DataFrame(text)
+            st.table(df)
+        else:
+            rendered = False
+            if isinstance(text, dict):
+                for key, value in text.items():
+                    if isinstance(value, list) and value:
+                        st.markdown(f"**{speaker}:** {key}")
+                        if all(isinstance(x, dict) for x in value):
+                            df = pd.DataFrame(value)
+                        elif all(isinstance(x, str) for x in value):
+                            df = pd.DataFrame(value, columns=[key])
+                        else:
+                            df = pd.DataFrame(value)
+                        st.table(df)
+                        rendered = True
+                    elif isinstance(value, str):
+                        st.markdown(f"**{speaker}:** {value}")
+                        rendered = True
+            if not rendered:
+                st.markdown(f"**{speaker}:** {text}")
+    else:
+        st.markdown(f"**{speaker}:** {text}")
 
 # Add a hidden anchor for autoscroll
 import streamlit.components.v1 as components

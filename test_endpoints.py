@@ -63,3 +63,33 @@ try:
     print(sql_content)
 except Exception:
     print(sql_resp.text)
+
+# GROK LLM
+
+# GROK LLM using OpenAI SDK
+try:
+    from openai import OpenAI
+    grok_endpoint   = os.environ.get("GROK_API_ENDPOINT")
+    grok_key        = os.environ.get("GROK_API_KEY")
+    grok_model      = os.environ.get("GROK_MODEL_NAME")
+
+    if not all([grok_endpoint, grok_key, grok_model]):
+        print("Missing one or more required environment variables for Grok endpoint.")
+    else:
+        client = OpenAI(
+            base_url=f"{grok_endpoint}/openai/v1/",
+            api_key=grok_key
+        )
+        completion = client.chat.completions.create(
+            model=grok_model,
+            messages=[
+                {
+                    "role": "user",
+                    "content": "What is the capital of Japan?",
+                }
+            ],
+        )
+    print("\nGROK LLM reply:")
+    print(completion.choices[0].message.content)
+except Exception as e:
+    print(f"GROK LLM error: {e}")

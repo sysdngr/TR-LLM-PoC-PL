@@ -1,0 +1,548 @@
+PlayerId,FirstName,LastName,Player,Team Name,No.,Pos.,Nation,Position,LoanStatus,DateOfBirth,JoinedClub,Height,Weight,PreferredFoot
+154561.0,David,Raya,David Raya,Arsenal,1,GK,ESP,Goalkeeper,0.0,1995-09-15,2024-07-04,183.0,80.0,Right
+462424.0,William,Saliba,William Saliba,Arsenal,2,DF,FRA,Defender,0.0,2001-03-24,2019-07-25,192.0,92.0,Right
+500040.0,Cristhian,Mosquera,Cristhian Mosquera,Arsenal,3,DF,ESP,Defender,1.0,2004-06-27,2025-07-24,191.0,78.0,Right
+198869.0,Ben,White,Ben White,Arsenal,4,DF,ENG,Defender,0.0,1997-10-08,2021-07-30,186.0,76.0,Right
+448104.0,Piero,Hincapié,Piero Hincapié,Arsenal,5,DF,ECU,Defender,1.0,2002-01-09,2025-09-01,184.0,77.0,Left
+226597.0,Gabriel,Magalhães,Gabriel Magalhães,Arsenal,6,DF,BRA,Defender,0.0,1997-12-19,2020-09-01,190.0,78.0,Left
+223340.0,Bukayo,Saka,Bukayo Saka,Arsenal,7,FW,ENG,Forward,0.0,2001-09-05,2018-11-28,178.0,72.0,Left
+184029.0,Martin,Ødegaard,Martin Ødegaard,Arsenal,8,MF,NOR,Midfielder,0.0,1998-12-17,2021-08-20,178.0,68.0,Left
+205651.0,Gabriel,Jesus,Gabriel Jesus,Arsenal,9,FW,BRA,Forward,0.0,1997-04-03,2022-07-04,175.0,73.0,Right
+232413.0,Eberechi,Eze,Eberechi Eze,Arsenal,10,MF,ENG,Midfielder,0.0,1998-06-29,2025-08-23,178.0,73.0,Right
+,,,Gabriel Martinelli,Arsenal,11,FW,BRA,,,,,,,
+445122.0,Jurriën,Timber,Jurriën Timber,Arsenal,12,DF,NED,Defender,0.0,2001-06-17,2023-07-14,179.0,79.0,Right
+109745.0,Kepa,Arrizabalaga,Kepa Arrizabalaga,Arsenal,13,GK,ESP,Goalkeeper,0.0,1994-10-03,2025-07-01,189.0,84.0,Right
+224117.0,Viktor,Gyökeres,Viktor Gyökeres,Arsenal,14,FW,SWE,Forward,0.0,1998-06-04,2025-07-26,189.0,90.0,Right
+128295.0,Christian,Nørgaard,Christian Nørgaard,Arsenal,16,MF,DEN,Midfielder,0.0,1994-03-10,2025-07-10,187.0,73.0,Right
+116216.0,Leandro,Trossard,Leandro Trossard,Arsenal,19,FW,BEL,Forward,0.0,1994-12-04,2023-01-20,172.0,61.0,Right
+248857.0,Noni,Madueke,Noni Madueke,Arsenal,20,FW,ENG,Forward,0.0,2002-03-10,2025-07-18,182.0,75.0,Left
+499175.0,Ethan,Nwaneri,Ethan Nwaneri,Arsenal,22,MF,ENG,Midfielder,0.0,2007-03-21,2022-09-17,176.0,70.0,Left
+195384.0,Mikel,Merino,Mikel Merino,Arsenal,23,MF,ESP,Midfielder,0.0,1996-06-22,2024-08-27,189.0,83.0,Left
+219847.0,Kai,Havertz,Kai Havertz,Arsenal,29,FW,GER,Forward,0.0,1999-06-11,2023-06-28,193.0,83.0,Left
+466075.0,Riccardo,Calafiori,Riccardo Calafiori,Arsenal,33,DF,ITA,Defender,0.0,2002-05-19,2024-07-29,188.0,86.0,Left
+481655.0,Martín,Zubimendi,Martín Zubimendi,Arsenal,36,MF,ESP,Midfielder,0.0,1999-02-02,2025-07-06,181.0,74.0,Right
+204480.0,Declan,Rice,Declan Rice,Arsenal,41,MF,ENG,Midfielder,0.0,1999-01-14,2023-07-15,188.0,84.0,Right
+499169.0,Myles,Lewis-Skelly,Myles Lewis-Skelly,Arsenal,49,DF,ENG,Defender,0.0,2006-09-26,2022-12-04,178.0,72.0,Left
+199796.0,Matty,Cash,Matty Cash,Aston Villa,2,DF,POL,Defender,0.0,1997-08-07,2020-09-03,185.0,79.0,Right
+184667.0,Victor,Lindelöf,Victor Lindelöf,Aston Villa,3,DF,SWE,Defender,0.0,1994-07-17,2025-09-01,187.0,80.0,Right
+199798.0,Ezri,Konsa,Ezri Konsa,Aston Villa,4,DF,ENG,Defender,0.0,1997-10-23,2019-07-11,183.0,73.0,Right
+149484.0,Tyrone,Mings,Tyrone Mings,Aston Villa,5,DF,ENG,Defender,0.0,1993-03-13,2019-07-08,196.0,77.0,Left
+88894.0,Ross,Barkley,Ross Barkley,Aston Villa,6,MF,ENG,Midfielder,0.0,1993-12-05,2024-07-01,189.0,76.0,Right
+122806.0,John,McGinn,John McGinn,Aston Villa,7,MF,SCO,Midfielder,0.0,1994-10-18,2018-08-08,178.0,68.0,Left
+166989.0,Youri,Tielemans,Youri Tielemans,Aston Villa,8,MF,BEL,Midfielder,0.0,1997-05-07,2023-06-14,176.0,72.0,Right
+444884.0,Harvey,Elliott,Harvey Elliott,Aston Villa,9,FW,ENG,Midfielder,1.0,2003-04-04,2025-09-01,170.0,64.0,Left
+195546.0,Emiliano,Buendía,Emiliano Buendía,Aston Villa,10,MF,ARG,Midfielder,0.0,1996-12-25,2021-06-10,172.0,72.0,Right
+178301.0,Ollie,Watkins,Ollie Watkins,Aston Villa,11,FW,ENG,Forward,0.0,1995-12-30,2020-09-09,180.0,75.0,Right
+101188.0,Lucas,Digne,Lucas Digne,Aston Villa,12,DF,FRA,Defender,0.0,1993-07-20,2022-01-13,178.0,74.0,Left
+244954.0,Pau,Torres,Pau Torres,Aston Villa,14,DF,ESP,Defender,0.0,1997-01-16,2023-07-12,191.0,80.0,Left
+606798.0,Andrés,García,Andrés García,Aston Villa,16,DF,ESP,Defender,0.0,2003-02-07,2025-01-21,185.0,77.0,Right
+204646.0,Donyell,Malen,Donyell Malen,Aston Villa,17,FW,NED,Forward,0.0,1999-01-19,2025-01-14,176.0,68.0,Right
+209243.0,Jadon,Sancho,Jadon Sancho,Aston Villa,19,FW,ENG,Forward,1.0,2000-03-25,2025-09-01,180.0,76.0,Right
+441302.0,Ian,Maatsen,Ian Maatsen,Aston Villa,22,DF,NED,Defender,0.0,2002-03-10,2024-06-28,178.0,57.0,Left
+98980.0,Emiliano,Martínez,Emiliano Martínez,Aston Villa,23,GK,ARG,Goalkeeper,0.0,1992-09-02,2020-09-16,195.0,88.0,Right
+449871.0,Amadou,Onana,Amadou Onana,Aston Villa,24,MF,BEL,Midfielder,0.0,2001-08-16,2024-07-22,195.0,76.0,Right
+515597.0,Lamare,Bogarde,Lamare Bogarde,Aston Villa,26,DF,NED,Defender,0.0,2004-01-05,2021-01-07,183.0,76.0,Right
+244850.0,Morgan,Rogers,Morgan Rogers,Aston Villa,27,MF,ENG,Forward,0.0,2002-07-26,2024-02-01,187.0,80.0,Right
+485337.0,Evann,Guessand,Evann Guessand,Aston Villa,29,FW,CIV,Forward,0.0,2001-07-01,2025-08-08,185.0,79.0,Right
+72147.0,Marco,Bizot,Marco Bizot,Aston Villa,40,GK,NED,Goalkeeper,0.0,1991-03-10,2025-07-15,193.0,88.0,Right
+226944.0,Boubacar,Kamara,Boubacar Kamara,Aston Villa,44,MF,FRA,Midfielder,0.0,1999-11-23,2022-06-11,184.0,68.0,Right
+645618.0,Bradley,Burrowes,Bradley Burrowes,Aston Villa,83,MF,ENG,Midfielder,0.0,2008-03-04,2025-01-09,,,
+,,,Đorđe Petrović,Bournemouth,1,GK,SRB,,,,,,,
+436893.0,Julián,Araujo,Julián Araujo,Bournemouth,2,DF,MEX,Defender,0.0,2001-08-13,2024-08-13,175.0,70.0,Right
+494521.0,Adrien,Truffert,Adrien Truffert,Bournemouth,3,DF,FRA,Defender,0.0,2001-11-20,2025-06-16,176.0,72.0,Left
+155408.0,Lewis,Cook,Lewis Cook,Bournemouth,4,MF,ENG,Midfielder,0.0,1997-02-03,2016-07-08,175.0,71.0,Right
+221466.0,Marcos,Senesi,Marcos Senesi,Bournemouth,5,DF,ARG,Defender,0.0,1997-05-10,2022-08-08,185.0,80.0,Left
+575901.0,Julio,Soler,Julio Soler,Bournemouth,6,DF,ARG,Defender,0.0,2005-02-16,2025-01-07,170.0,63.0,Left
+111317.0,David,Brooks,David Brooks,Bournemouth,7,MF,WAL,Midfielder,0.0,1997-07-08,2018-07-01,173.0,62.0,Left
+503139.0,Alex,Scott,Alex Scott,Bournemouth,8,MF,ENG,Midfielder,0.0,2003-08-21,2023-08-10,178.0,68.0,Right
+,,,Evanilson,Bournemouth,9,FW,BRA,,,,,,,
+158499.0,Ryan,Christie,Ryan Christie,Bournemouth,10,MF,SCO,Midfielder,0.0,1995-02-22,2021-08-31,178.0,70.0,Left
+,,,Ben Gannon Doak,Bournemouth,11,FW,SCO,,,,,,,
+200785.0,Tyler,Adams,Tyler Adams,Bournemouth,12,MF,USA,Midfielder,0.0,1999-02-14,2023-08-20,175.0,72.0,Right
+54469.0,Adam,Smith,Adam Smith,Bournemouth,15,DF,ENG,Defender,0.0,1991-04-29,2014-01-28,180.0,78.0,Right
+201658.0,Marcus,Tavernier,Marcus Tavernier,Bournemouth,16,MF,ENG,Midfielder,0.0,1999-03-22,2022-08-01,178.0,70.0,Left
+242882.0,Bafodé,Diakité,Bafodé Diakité,Bournemouth,18,DF,FRA,Defender,0.0,2001-01-06,2025-08-13,185.0,74.0,Right
+222683.0,Justin,Kluivert,Justin Kluivert,Bournemouth,19,FW,NED,Forward,0.0,1999-05-05,2023-07-01,171.0,67.0,Right
+551483.0,Álex,Jiménez,Álex Jiménez,Bournemouth,20,DF,ESP,Defender,1.0,2005-05-08,2025-09-01,177.0,73.0,Right
+489888.0,Amine,Adli,Amine Adli,Bournemouth,21,MF,MAR,Forward,0.0,2000-05-10,2025-08-21,174.0,72.0,Left
+,,,Eli Junior Kroupi,Bournemouth,22,FW,FRA,,,,,,,
+463981.0,James,Hill,James Hill,Bournemouth,23,DF,ENG,Defender,0.0,2002-01-10,2022-01-05,184.0,73.0,Right
+437730.0,Antoine,Semenyo,Antoine Semenyo,Bournemouth,24,FW,GHA,Forward,0.0,2000-01-07,2023-01-27,185.0,79.0,Right
+168636.0,Enes,Ünal,Enes Ünal,Bournemouth,26,FW,TUR,Forward,0.0,1997-05-10,2024-07-01,187.0,78.0,Right
+518906.0,Owen,Bevan,Owen Bevan,Bournemouth,35,DF,WAL,Defender,0.0,2003-10-26,2022-08-22,186.0,,
+444172.0,Will,Dennis,Will Dennis,Bournemouth,40,GK,ENG,Goalkeeper,0.0,2000-07-10,2019-08-01,188.0,84.0,Right
+,,,Veljko Milosavljević,Bournemouth,44,DF,SRB,,,,,,,
+541462.0,Matai,Akinmboni,Matai Akinmboni,Bournemouth,45,DF,USA,Defender,0.0,2006-10-17,2025-01-03,191.0,77.0,Left
+568791.0,Callan,McKenna,Callan McKenna,Bournemouth,46,GK,SCO,Goalkeeper,0.0,2006-12-22,2024-02-01,188.0,76.0,Right
+550596.0,Dominic,Sadi,Dominic Sadi,Bournemouth,49,MF,ENG,Forward,0.0,2003-09-02,2022-08-22,174.0,65.0,Right
+606774.0,Remy,Rees-Dottin,Remy Rees-Dottin,Bournemouth,50,FW,ENG,Forward,0.0,2006-03-06,2024-12-28,174.0,76.0,Right
+200720.0,Caoimhín,Kelleher,Caoimhín Kelleher,Brentford,1,GK,IRL,Goalkeeper,0.0,1998-11-23,2025-06-03,188.0,74.0,Right
+472713.0,Aaron,Hickey,Aaron Hickey,Brentford,2,DF,SCO,Defender,0.0,2002-06-10,2022-07-09,178.0,72.0,Both
+194010.0,Rico,Henry,Rico Henry,Brentford,3,DF,ENG,Defender,0.0,1997-07-08,2016-08-31,170.0,67.0,Left
+,,,Sepp van den Berg,Brentford,4,DF,NED,,,,,,,
+231065.0,Ethan,Pinnock,Ethan Pinnock,Brentford,5,DF,JAM,Defender,0.0,1993-05-29,2019-07-02,194.0,79.0,Left
+56979.0,Jordan,Henderson,Jordan Henderson,Brentford,6,MF,ENG,Midfielder,0.0,1990-06-17,2025-07-15,182.0,78.0,Right
+513418.0,Kevin,Schade,Kevin Schade,Brentford,7,FW,GER,Midfielder,0.0,2001-11-27,2023-07-01,183.0,74.0,Right
+207283.0,Mathias,Jensen,Mathias Jensen,Brentford,8,MF,DEN,Midfielder,0.0,1996-01-01,2019-07-10,180.0,72.0,Right
+,,,Igor Thiago,Brentford,9,FW,BRA,,,,,,,
+183656.0,Josh,Dasilva,Josh Dasilva,Brentford,10,MF,ENG,Midfielder,0.0,1998-10-23,2018-08-21,184.0,75.0,Left
+200641.0,Reiss,Nelson,Reiss Nelson,Brentford,11,FW,ENG,Forward,1.0,1999-12-10,2025-09-01,175.0,71.0,Right
+507433.0,Hákon,Valdimarsson,Hákon Valdimarsson,Brentford,12,GK,ISL,Goalkeeper,0.0,2001-10-13,2024-01-26,188.0,89.0,Right
+503300.0,Matthew,Cox,Matthew Cox,Brentford,13,GK,ENG,Goalkeeper,0.0,2003-05-02,2021-10-26,182.0,64.0,Right
+244858.0,Fábio,Carvalho,Fábio Carvalho,Brentford,14,MF,POR,Midfielder,0.0,2002-08-30,2024-08-12,170.0,62.0,Right
+428580.0,Frank,Onyeka,Frank Onyeka,Brentford,15,MF,NGA,Midfielder,0.0,1998-01-01,2021-07-20,183.0,70.0,Right
+543295.0,Antoni,Milambo,Antoni Milambo,Brentford,17,MF,NED,Midfielder,0.0,2005-04-03,2025-07-03,179.0,68.0,Right
+,,,Yehor Yarmolyuk,Brentford,18,MF,UKR,,,,,,,
+533463.0,Dango,Ouattara,Dango Ouattara,Brentford,19,FW,BFA,Forward,0.0,2002-02-11,2025-08-16,177.0,71.0,Left
+191866.0,Kristoffer,Ajer,Kristoffer Ajer,Brentford,20,DF,NOR,Defender,0.0,1998-04-17,2021-07-21,198.0,92.0,Right
+432830.0,Nathan,Collins,Nathan Collins,Brentford,22,DF,IRL,Defender,0.0,2001-04-30,2023-07-04,193.0,83.0,Right
+249231.0,Keane,Lewis-Potter,Keane Lewis-Potter,Brentford,23,MF,ENG,Forward,0.0,2001-02-22,2022-07-12,170.0,67.0,Right
+440089.0,Mikkel,Damsgaard,Mikkel Damsgaard,Brentford,24,MF,DEN,Midfielder,0.0,2000-07-03,2022-08-10,180.0,66.0,Right
+450539.0,Myles,Peart-Harris,Myles Peart-Harris,Brentford,25,MF,ENG,Midfielder,0.0,2002-09-18,2021-07-23,187.0,80.0,Right
+,,,Yunus Emre Konak,Brentford,26,MF,TUR,,,,,,,
+204580.0,Vitaly,Janelt,Vitaly Janelt,Brentford,27,MF,GER,Midfielder,0.0,1998-05-10,2020-10-03,184.0,79.0,Left
+235448.0,Ellery,Balcombe,Ellery Balcombe,Brentford,31,GK,ENG,Goalkeeper,0.0,1999-10-15,2016-11-02,190.0,92.0,Right
+220695.0,Paris,Maghoma,Paris Maghoma,Brentford,32,MF,ENG,Midfielder,0.0,2001-05-08,2020-08-01,181.0,69.0,Right
+607464.0,Michael,Kayode,Michael Kayode,Brentford,33,DF,ITA,Defender,0.0,2004-07-10,2025-07-01,179.0,74.0,Right
+,,,Gustavo Nunes,Brentford,39,FW,BRA,,,,,,,
+535017.0,Julian,Eyestone,Julian Eyestone,Brentford,41,GK,USA,Goalkeeper,0.0,2006-04-21,2024-08-08,198.0,97.0,Right
+622536.0,Benjamin,Arthur,Benjamin Arthur,Brentford,43,DF,ENG,Defender,0.0,2005-10-09,2024-03-08,189.0,80.0,Right
+606689.0,Romelle,Donovan,Romelle Donovan,Brentford,45,FW,ENG,Midfielder,0.0,2006-11-30,2025-07-01,,,
+489639.0,Bart,Verbruggen,Bart Verbruggen,Brighton & Hove Albion,1,GK,NED,Goalkeeper,0.0,2002-08-18,2023-07-03,193.0,66.0,Right
+110735.0,Adam,Webster,Adam Webster,Brighton & Hove Albion,4,DF,ENG,Defender,0.0,1995-01-04,2019-08-03,191.0,75.0,Right
+83299.0,Lewis,Dunk,Lewis Dunk,Brighton & Hove Albion,5,DF,ENG,Defender,0.0,1991-11-21,2009-07-01,192.0,88.0,Right
+,,,Jan Paul van Hecke,Brighton & Hove Albion,6,DF,NED,,,,,,,
+109345.0,Solly,March,Solly March,Brighton & Hove Albion,7,MF,ENG,Midfielder,0.0,1994-07-20,2012-07-01,180.0,88.0,Left
+513433.0,Brajan,Gruda,Brajan Gruda,Brighton & Hove Albion,8,MF,GER,Midfielder,0.0,2004-05-31,2024-08-14,178.0,70.0,Left
+608181.0,Stefanos,Tzimas,Stefanos Tzimas,Brighton & Hove Albion,9,FW,GRE,Forward,0.0,2006-01-06,2025-02-03,186.0,77.0,Both
+463067.0,Georginio,Rutter,Georginio Rutter,Brighton & Hove Albion,10,FW,FRA,Forward,0.0,2002-04-20,2024-08-19,182.0,83.0,Left
+592031.0,Yankuba,Minteh,Yankuba Minteh,Brighton & Hove Albion,11,MF,GAM,Forward,0.0,2004-07-22,2024-07-01,180.0,65.0,Left
+532529.0,Jack,Hinshelwood,Jack Hinshelwood,Brighton & Hove Albion,13,MF,ENG,Midfielder,0.0,2005-04-11,2022-12-30,181.0,76.0,Right
+549074.0,Tom,Watson,Tom Watson,Brighton & Hove Albion,14,MF,ENG,Forward,0.0,2006-04-08,2025-06-01,168.0,63.0,Right
+535301.0,Carlos,Baleba,Carlos Baleba,Brighton & Hove Albion,17,MF,CMR,Midfielder,0.0,2004-01-03,2023-08-29,179.0,73.0,Left
+50175.0,Danny,Welbeck,Danny Welbeck,Brighton & Hove Albion,18,FW,ENG,Forward,0.0,1990-11-26,2020-10-18,185.0,73.0,Right
+647850.0,Charalampos,Kostoulas,Charalampos Kostoulas,Brighton & Hove Albion,19,FW,GRE,Forward,0.0,2007-05-30,2025-07-01,,,
+15157.0,James,Milner,James Milner,Brighton & Hove Albion,20,MF,ENG,Midfielder,0.0,1986-01-04,2023-07-01,175.0,70.0,Right
+204120.0,Olivier,Boscagli,Olivier Boscagli,Brighton & Hove Albion,21,DF,FRA,Defender,0.0,1997-11-18,2025-07-02,181.0,68.0,Left
+451340.0,Kaoru,Mitoma,Kaoru Mitoma,Brighton & Hove Albion,22,MF,JPN,Midfielder,0.0,1997-05-20,2021-08-09,178.0,73.0,Right
+49262.0,Jason,Steele,Jason Steele,Brighton & Hove Albion,23,GK,ENG,Goalkeeper,0.0,1990-08-18,2018-07-01,188.0,79.0,Right
+,,,Ferdi Kadıoğlu,Brighton & Hove Albion,24,DF,TUR,,,,,,,
+514254.0,Diego,Gómez,Diego Gómez,Brighton & Hove Albion,25,MF,PAR,Midfielder,0.0,2003-03-27,2025-01-01,183.0,77.0,Right
+509416.0,Yasin,Ayari,Yasin Ayari,Brighton & Hove Albion,26,MF,SWE,Midfielder,0.0,2003-10-06,2023-01-30,172.0,69.0,Right
+467779.0,Mats,Wieffer,Mats Wieffer,Brighton & Hove Albion,27,MF,NED,Midfielder,0.0,1999-11-16,2024-07-06,188.0,78.0,Right
+,,,Maxim De Cuyper,Brighton & Hove Albion,29,DF,BEL,,,,,,,
+111478.0,Joël,Veltman,Joël Veltman,Brighton & Hove Albion,34,DF,NED,Defender,0.0,1992-01-15,2020-07-29,184.0,75.0,Right
+209288.0,Tom,McGill,Tom McGill,Brighton & Hove Albion,38,GK,CAN,Goalkeeper,0.0,2000-03-25,2021-02-02,185.0,80.0,Right
+550090.0,Diego,Coppola,Diego Coppola,Brighton & Hove Albion,42,DF,ITA,Defender,0.0,2003-12-28,2025-06-17,192.0,78.0,Right
+67089.0,Martin,Dúbravka,Martin Dúbravka,Burnley,1,GK,SVK,Goalkeeper,0.0,1989-01-15,2025-08-07,190.0,83.0,Right
+58621.0,Kyle,Walker,Kyle Walker,Burnley,2,DF,ENG,Defender,0.0,1990-05-28,2025-07-05,183.0,80.0,Right
+494960.0,Quilindschy,Hartman,Quilindschy Hartman,Burnley,3,DF,NED,Defender,0.0,2001-11-14,2025-06-26,183.0,77.0,Left
+208912.0,Joe,Worrall,Joe Worrall,Burnley,4,DF,ENG,Defender,0.0,1997-01-10,2024-08-23,193.0,64.0,Right
+477717.0,Maxime,Estève,Maxime Estève,Burnley,5,DF,FRA,Defender,0.0,2002-05-26,2024-06-14,193.0,87.0,Left
+180804.0,Axel,Tuanzebe,Axel Tuanzebe,Burnley,6,DF,COD,Defender,0.0,1997-11-14,2025-07-01,186.0,75.0,Right
+,,,Jacob Bruun Larsen,Burnley,7,FW,DEN,,,,,,,
+503714.0,Lesley,Ugochukwu,Lesley Ugochukwu,Burnley,8,MF,FRA,Midfielder,0.0,2004-03-26,2025-08-06,190.0,72.0,Right
+435973.0,Lyle,Foster,Lyle Foster,Burnley,9,FW,RSA,Forward,0.0,2000-09-03,2023-01-25,185.0,70.0,Right
+174592.0,Marcus,Edwards,Marcus Edwards,Burnley,10,FW,ENG,Forward,0.0,1998-12-03,2025-07-01,168.0,65.0,Left
+444180.0,Jaidon,Anthony,Jaidon Anthony,Burnley,11,FW,ENG,Forward,0.0,1999-12-01,2025-07-01,183.0,,Right
+461188.0,Bashir,Humphreys,Bashir Humphreys,Burnley,12,DF,ENG,Defender,0.0,2003-03-15,2025-07-01,187.0,79.0,Left
+,,,Max Weiß,Burnley,13,GK,GER,,,,,,,
+192290.0,Connor,Roberts,Connor Roberts,Burnley,14,DF,WAL,Defender,0.0,1995-09-23,2021-08-31,175.0,72.0,Right
+216055.0,Florentino,Luís,Florentino Luís,Burnley,16,MF,POR,Midfielder,1.0,1999-08-19,2025-09-01,184.0,74.0,Right
+469272.0,Loum,Tchaouna,Loum Tchaouna,Burnley,17,FW,FRA,Forward,0.0,2003-09-08,2025-07-02,180.0,68.0,Left
+478969.0,Hjalmar,Ekdal,Hjalmar Ekdal,Burnley,18,DF,SWE,Defender,0.0,1998-10-21,2023-01-21,188.0,77.0,Right
+431639.0,Zian,Flemming,Zian Flemming,Burnley,19,FW,NED,Midfielder,0.0,1998-08-01,2025-06-01,185.0,84.0,Right
+519895.0,Oliver,Sonne,Oliver Sonne,Burnley,22,DF,PER,Defender,0.0,2000-11-10,2025-01-01,184.0,72.0,Right
+,,,Lucas Pires,Burnley,23,DF,BRA,,,,,,,
+172567.0,Josh,Cullen,Josh Cullen,Burnley,24,MF,IRL,Midfielder,0.0,1996-04-07,2022-07-12,175.0,70.0,Right
+492831.0,Zeki,Amdouni,Zeki Amdouni,Burnley,25,FW,SUI,Forward,0.0,2000-12-04,2023-07-19,185.0,79.0,Both
+440323.0,Armando,Broja,Armando Broja,Burnley,27,FW,ALB,Forward,0.0,2001-09-10,2025-08-08,191.0,83.0,Right
+465527.0,Hannibal,Mejbri,Hannibal Mejbri,Burnley,28,MF,TUN,Midfielder,0.0,2003-01-21,2024-08-28,177.0,74.0,Right
+167887.0,Josh,Laurent,Josh Laurent,Burnley,29,MF,ENG,Midfielder,0.0,1995-05-06,2024-08-30,188.0,70.0,Right
+437748.0,Mike,Trésor,Mike Trésor,Burnley,31,MF,BEL,Forward,0.0,1999-05-28,2024-07-01,172.0,64.0,Right
+,,,Václav Hladký,Burnley,32,GK,CZE,,,,,,,
+551206.0,Jaydon,Banel,Jaydon Banel,Burnley,34,FW,NED,Forward,0.0,2004-10-19,2025-02-03,173.0,70.0,Right
+44699.0,Ashley,Barnes,Ashley Barnes,Burnley,35,FW,ENG,Forward,0.0,1989-10-30,2025-01-02,186.0,77.0,Right
+241231.0,Jordan,Beyer,Jordan Beyer,Burnley,36,DF,GER,Defender,0.0,2000-05-19,2023-07-01,187.0,80.0,Right
+247245.0,Hannes,Delcroix,Hannes Delcroix,Burnley,44,DF,BEL,Defender,0.0,1999-02-28,2023-08-22,185.0,78.0,Left
+578614.0,Enock,Agyei,Enock Agyei,Burnley,48,FW,BEL,Forward,0.0,2005-01-13,2023-01-30,172.0,,Left
+215059.0,Robert,Sánchez,Robert Sánchez,Chelsea,1,GK,ESP,Goalkeeper,0.0,1997-11-18,2023-08-05,197.0,90.0,Left
+179268.0,Marc,Cucurella,Marc Cucurella,Chelsea,3,DF,ESP,Defender,0.0,1998-07-22,2022-08-05,174.0,66.0,Left
+109646.0,Tosin,Adarabioyo,Tosin Adarabioyo,Chelsea,4,DF,ENG,Defender,0.0,1997-09-24,2024-07-01,196.0,80.0,Right
+242880.0,Benoît,Badiashile,Benoît Badiashile,Chelsea,5,DF,FRA,Defender,0.0,2001-03-26,2023-01-05,194.0,75.0,Left
+460028.0,Levi,Colwill,Levi Colwill,Chelsea,6,DF,ENG,Defender,0.0,2003-02-26,2022-07-01,187.0,83.0,Left
+247632.0,Pedro,Neto,Pedro Neto,Chelsea,7,FW,POR,Forward,0.0,2000-03-09,2024-08-11,174.0,62.0,Left
+448047.0,Enzo,Fernández,Enzo Fernández,Chelsea,8,MF,ARG,Midfielder,0.0,2001-01-17,2023-01-31,178.0,76.0,Right
+463034.0,Liam,Delap,Liam Delap,Chelsea,9,FW,ENG,Forward,0.0,2003-02-08,2025-06-04,186.0,72.0,Right
+244851.0,Cole,Palmer,Cole Palmer,Chelsea,10,MF,ENG,Midfielder,0.0,2002-05-06,2023-09-01,189.0,76.0,Left
+463936.0,Jamie,Gittens,Jamie Gittens,Chelsea,11,FW,ENG,Forward,0.0,2004-08-08,2025-07-05,175.0,70.0,Right
+,,,Filip Jörgensen,Chelsea,12,GK,DEN,,,,,,,
+491007.0,Dário,Essugo,Dário Essugo,Chelsea,14,MF,POR,Midfielder,0.0,2005-03-14,2025-06-02,178.0,79.0,Right
+532605.0,Andrey,Santos,Andrey Santos,Chelsea,17,MF,BRA,Midfielder,0.0,2004-05-03,2023-01-07,180.0,75.0,Right
+,,,João Pedro,Chelsea,20,FW,BRA,,,,,,,
+551210.0,Jorrel,Hato,Jorrel Hato,Chelsea,21,DF,NED,Defender,0.0,2006-03-07,2025-08-03,182.0,76.0,Left
+180736.0,Trevoh,Chalobah,Trevoh Chalobah,Chelsea,23,DF,ENG,Defender,0.0,1999-07-05,2018-02-16,190.0,75.0,Right
+225796.0,Reece,James,Reece James,Chelsea,24,DF,ENG,Defender,0.0,1999-12-08,2019-05-15,182.0,82.0,Right
+486672.0,Moisés,Caicedo,Moisés Caicedo,Chelsea,25,MF,ECU,Midfielder,0.0,2001-11-02,2023-08-14,178.0,73.0,Right
+482609.0,Malo,Gusto,Malo Gusto,Chelsea,27,DF,FRA,Defender,0.0,2003-05-19,2023-01-28,179.0,67.0,Right
+444463.0,Wesley,Fofana,Wesley Fofana,Chelsea,29,DF,FRA,Defender,0.0,2000-12-17,2022-08-31,190.0,84.0,Right
+550615.0,Tyrique,George,Tyrique George,Chelsea,32,FW,ENG,Forward,0.0,2006-02-04,2024-04-15,181.0,75.0,Right
+577016.0,Josh,Acheampong,Josh Acheampong,Chelsea,34,DF,ENG,Defender,0.0,2006-05-05,2024-03-10,184.0,75.0,Right
+499309.0,Marc,Guiu,Marc Guiu,Chelsea,38,FW,ESP,Forward,0.0,2006-01-04,2024-07-01,187.0,82.0,Left
+536916.0,Facundo,Buonanotte,Facundo Buonanotte,Chelsea,40,MF,ARG,Midfielder,1.0,2004-12-23,2025-09-01,174.0,66.0,Left
+,,,Estêvão,Chelsea,41,FW,BRA,,,,,,,
+,,,Gabriel Slonina,Chelsea,44,GK,USA,,,,,,,
+514356.0,Roméo,Lavia,Roméo Lavia,Chelsea,45,MF,BEL,Midfielder,0.0,2004-01-06,2023-08-18,181.0,76.0,Right
+493105.0,Alejandro,Garnacho,Alejandro Garnacho,Chelsea,49,FW,ARG,Forward,0.0,2004-07-01,2025-08-30,180.0,73.0,Right
+465920.0,Mykhailo,Mudryk,Mykhailo Mudryk,Chelsea,—,FW,UKR,Midfielder,0.0,2001-01-05,2023-01-15,175.0,61.0,Right
+172649.0,Dean,Henderson,Dean Henderson,Crystal Palace,1,GK,ENG,Goalkeeper,0.0,1997-03-12,2023-08-31,188.0,85.0,Right
+247348.0,Daniel,Muñoz,Daniel Muñoz,Crystal Palace,2,DF,COL,Defender,0.0,1996-05-26,2024-01-30,180.0,73.0,Right
+244723.0,Tyrick,Mitchell,Tyrick Mitchell,Crystal Palace,3,DF,ENG,Defender,0.0,1999-09-01,2019-12-15,175.0,68.0,Left
+437499.0,Maxence,Lacroix,Maxence Lacroix,Crystal Palace,5,DF,FRA,Defender,0.0,2000-04-06,2024-08-30,190.0,88.0,Right
+209036.0,Marc,Guéhi,Marc Guéhi,Crystal Palace,6,DF,ENG,Defender,0.0,2000-07-13,2021-07-18,182.0,80.0,Right
+232185.0,Ismaïla,Sarr,Ismaïla Sarr,Crystal Palace,7,MF,SEN,Forward,0.0,1998-02-25,2024-08-01,185.0,76.0,Right
+152551.0,Jefferson,Lerma,Jefferson Lerma,Crystal Palace,8,MF,COL,Midfielder,0.0,1994-10-25,2023-07-01,179.0,70.0,Right
+205533.0,Eddie,Nketiah,Eddie Nketiah,Crystal Palace,9,FW,ENG,Forward,0.0,1999-05-30,2024-08-30,175.0,72.0,Right
+488024.0,Yéremy,Pino,Yéremy Pino,Crystal Palace,10,MF,ESP,Midfielder,0.0,2002-10-20,2025-08-29,172.0,65.0,Right
+660392.0,Christantus,Uche,Christantus Uche,Crystal Palace,12,MF,NGA,Midfielder,1.0,2003-05-19,2025-09-01,190.0,84.0,Both
+231747.0,Jean-Philippe,Mateta,Jean-Philippe Mateta,Crystal Palace,14,FW,FRA,Forward,0.0,1997-06-28,2022-01-31,192.0,88.0,Right
+57328.0,Nathaniel,Clyne,Nathaniel Clyne,Crystal Palace,17,DF,ENG,Defender,0.0,1991-04-05,2020-10-14,175.0,67.0,Right
+209400.0,Daichi,Kamada,Daichi Kamada,Crystal Palace,18,MF,JPN,Midfielder,0.0,1996-08-05,2024-07-01,184.0,76.0,Right
+108413.0,Will,Hughes,Will Hughes,Crystal Palace,19,MF,ENG,Midfielder,0.0,1995-04-17,2021-08-28,185.0,74.0,Left
+496221.0,Adam,Wharton,Adam Wharton,Crystal Palace,20,MF,ENG,Midfielder,0.0,2004-02-06,2024-02-01,182.0,77.0,Left
+606921.0,Romain,Esse,Romain Esse,Crystal Palace,21,MF,ENG,Midfielder,0.0,2005-05-13,2025-01-18,175.0,67.0,Left
+651426.0,Jaydee,Canvot,Jaydee Canvot,Crystal Palace,23,DF,FRA,Defender,0.0,2006-07-29,2025-09-01,188.0,75.0,Right
+218364.0,Borna,Sosa,Borna Sosa,Crystal Palace,24,DF,CRO,Defender,0.0,1998-01-21,2025-07-11,187.0,79.0,Left
+427623.0,Chris,Richards,Chris Richards,Crystal Palace,26,DF,USA,Defender,0.0,2000-03-28,2022-07-27,188.0,87.0,Right
+438464.0,Cheick,Doucouré,Cheick Doucouré,Crystal Palace,28,MF,MLI,Midfielder,0.0,2000-01-08,2022-07-11,180.0,73.0,Right
+466117.0,Naouirou,Ahamada,Naouirou Ahamada,Crystal Palace,29,MF,FRA,Midfielder,0.0,2002-03-29,2023-01-31,183.0,73.0,Right
+169593.0,Remi,Matthews,Remi Matthews,Crystal Palace,31,GK,ENG,Goalkeeper,0.0,1994-02-10,2021-07-13,184.0,78.0,Right
+515621.0,Chadi,Riad,Chadi Riad,Crystal Palace,34,DF,MAR,Defender,0.0,2003-06-17,2024-07-02,186.0,78.0,Left
+590012.0,Caleb,Kporha,Caleb Kporha,Crystal Palace,38,DF,ENG,Defender,0.0,2006-07-15,2024-07-30,170.0,67.0,Right
+530318.0,Kaden,Rodney,Kaden Rodney,Crystal Palace,42,MF,ENG,Midfielder,0.0,2004-10-07,2022-07-08,189.0,67.0,Right
+121709.0,Walter,Benítez,Walter Benítez,Crystal Palace,44,GK,ARG,Goalkeeper,0.0,1993-01-19,2025-07-01,191.0,91.0,Right
+489706.0,Justin,Devenny,Justin Devenny,Crystal Palace,55,MF,NIR,Midfielder,0.0,2003-10-11,2024-03-13,178.0,74.0,Left
+590014.0,Rio,Cardines,Rio Cardines,Crystal Palace,59,DF,TRI,Midfielder,0.0,2006-07-01,2025-07-24,175.0,,Left
+111234.0,Jordan,Pickford,Jordan Pickford,Everton,1,GK,ENG,Goalkeeper,0.0,1994-03-07,2017-07-01,185.0,82.0,Left
+243571.0,Nathan,Patterson,Nathan Patterson,Everton,2,DF,SCO,Defender,0.0,2001-10-16,2022-01-04,189.0,83.0,Right
+106611.0,Michael,Keane,Michael Keane,Everton,5,DF,ENG,Defender,0.0,1993-01-11,2017-07-03,191.0,82.0,Right
+17761.0,James,Tarkowski,James Tarkowski,Everton,6,DF,ENG,Defender,0.0,1992-11-19,2022-07-01,185.0,81.0,Right
+433154.0,Dwight,McNeil,Dwight McNeil,Everton,7,FW,ENG,Forward,0.0,1999-11-22,2022-07-28,183.0,68.0,Left
+,,,Beto,Everton,9,FW,GNB,,,,,,,
+440993.0,Iliman,Ndiaye,Iliman Ndiaye,Everton,10,FW,SEN,Forward,0.0,2000-03-06,2024-07-03,180.0,70.0,Right
+586309.0,Thierno,Barry,Thierno Barry,Everton,11,FW,FRA,Forward,0.0,2002-10-21,2025-07-09,195.0,82.0,Right
+229600.0,Mark,Travers,Mark Travers,Everton,12,GK,IRL,Goalkeeper,0.0,1999-05-18,2025-07-15,191.0,82.0,Right
+512462.0,Jake,O'Brien,Jake O'Brien,Everton,15,DF,IRL,Defender,0.0,2001-05-15,2024-07-30,197.0,92.0,Right
+,,,Vitaliy Mykolenko,Everton,16,DF,UKR,,,,,,,
+114283.0,Jack,Grealish,Jack Grealish,Everton,18,MF,ENG,Midfielder,1.0,1995-09-10,2025-08-12,180.0,77.0,Right
+496661.0,Tyler,Dibling,Tyler Dibling,Everton,20,FW,ENG,Midfielder,0.0,2006-02-17,2025-08-25,178.0,72.0,Left
+215413.0,Kiernan,Dewsbury-Hall,Kiernan Dewsbury-Hall,Everton,22,MF,ENG,Midfielder,0.0,1998-09-06,2025-08-06,178.0,80.0,Left
+59949.0,Séamus,Coleman,Séamus Coleman,Everton,23,DF,IRL,Defender,0.0,1988-10-11,2009-02-02,177.0,67.0,Right
+,,,Carlos Alcaraz,Everton,24,MF,ARG,,,,,,,
+80801.0,Idrissa,Gueye,Idrissa Gueye,Everton,27,MF,SEN,Midfielder,0.0,1989-09-26,2022-09-01,174.0,66.0,Right
+138001.0,Tom,King,Tom King,Everton,31,GK,WAL,Goalkeeper,0.0,1995-03-09,2025-08-15,194.0,80.0,Right
+480455.0,Jarrad,Branthwaite,Jarrad Branthwaite,Everton,32,DF,ENG,Defender,0.0,2002-06-27,2020-06-20,195.0,87.0,Left
+513466.0,Merlin,Röhl,Merlin Röhl,Everton,34,MF,GER,Midfielder,1.0,2002-07-05,2025-09-01,192.0,75.0,Right
+232928.0,James,Garner,James Garner,Everton,37,MF,ENG,Midfielder,0.0,2001-03-13,2022-09-01,186.0,78.0,Right
+447325.0,Harry,Tyrer,Harry Tyrer,Everton,38,GK,ENG,Goalkeeper,0.0,2001-12-06,2021-02-09,194.0,,Right
+499300.0,Adam,Aznou,Adam Aznou,Everton,39,DF,MAR,Defender,0.0,2006-06-02,2025-07-29,178.0,70.0,Left
+490094.0,Tim,Iroegbunam,Tim Iroegbunam,Everton,42,MF,ENG,Midfielder,0.0,2003-06-30,2024-06-22,183.0,70.0,Right
+80201.0,Bernd,Leno,Bernd Leno,Fulham,1,GK,GER,Goalkeeper,0.0,1992-03-04,2022-08-02,189.0,82.0,Right
+167074.0,Kenny,Tete,Kenny Tete,Fulham,2,DF,NED,Defender,0.0,1995-10-09,2020-09-10,180.0,71.0,Right
+232892.0,Calvin,Bassey,Calvin Bassey,Fulham,3,DF,NGA,Defender,0.0,1999-12-31,2023-07-28,185.0,76.0,Left
+174874.0,Joachim,Andersen,Joachim Andersen,Fulham,5,DF,DEN,Defender,0.0,1996-05-31,2024-08-23,192.0,86.0,Right
+153366.0,Harrison,Reed,Harrison Reed,Fulham,6,MF,ENG,Midfielder,0.0,1995-01-27,2020-08-30,181.0,72.0,Right
+102057.0,Raúl,Jiménez,Raúl Jiménez,Fulham,7,FW,MEX,Forward,0.0,1991-05-05,2023-07-25,190.0,76.0,Right
+153682.0,Harry,Wilson,Harry Wilson,Fulham,8,MF,WAL,Forward,0.0,1997-03-22,2021-07-24,173.0,63.0,Left
+,,,Rodrigo Muniz,Fulham,9,FW,BRA,,,,,,,
+76357.0,Tom,Cairney,Tom Cairney,Fulham,10,MF,SCO,Midfielder,0.0,1991-01-20,2015-07-07,185.0,84.0,Left
+159533.0,Adama,Traoré,Adama Traoré,Fulham,11,FW,ESP,Forward,0.0,1996-01-25,2023-08-12,178.0,86.0,Right
+246301.0,Jorge,Cuenca,Jorge Cuenca,Fulham,15,DF,ESP,Defender,0.0,1999-11-17,2024-08-03,190.0,75.0,Left
+207189.0,Sander,Berge,Sander Berge,Fulham,16,MF,NOR,Midfielder,0.0,1998-02-14,2024-08-22,195.0,96.0,Right
+153133.0,Alex,Iwobi,Alex Iwobi,Fulham,17,MF,NGA,Forward,0.0,1996-05-03,2023-09-01,180.0,75.0,Right
+631786.0,Jonah,Kusi-Asare,Jonah Kusi-Asare,Fulham,18,FW,SWE,Forward,1.0,2007-07-04,2025-09-01,196.0,84.0,Right
+218328.0,Samuel,Chukwueze,Samuel Chukwueze,Fulham,19,FW,NGA,Forward,1.0,1999-05-22,2025-09-01,172.0,70.0,Left
+,,,Saša Lukić,Fulham,20,MF,SRB,,,,,,,
+166477.0,Timothy,Castagne,Timothy Castagne,Fulham,21,DF,BEL,Defender,0.0,1995-12-05,2023-08-29,185.0,80.0,Right
+,,,Kevin,Fulham,22,FW,BRA,,,,,,,
+86873.0,Benjamin,Lecomte,Benjamin Lecomte,Fulham,23,GK,FRA,Goalkeeper,0.0,1991-04-26,2025-07-26,186.0,78.0,Right
+577725.0,Josh,King,Josh King,Fulham,24,MF,ENG,Midfielder,0.0,2007-01-03,2024-02-02,187.0,74.0,Right
+184349.0,Ryan,Sessegnon,Ryan Sessegnon,Fulham,30,MF,ENG,Midfielder,0.0,2000-05-18,2024-07-26,178.0,70.0,Left
+219924.0,Issa,Diop,Issa Diop,Fulham,31,DF,FRA,Defender,0.0,1997-01-09,2022-08-10,194.0,92.0,Right
+,,,Emile Smith Rowe,Fulham,32,MF,ENG,,,,,,,
+169528.0,Antonee,Robinson,Antonee Robinson,Fulham,33,DF,USA,Defender,0.0,1997-08-08,2020-08-20,183.0,70.0,Left
+201595.0,Lucas,Perri,Lucas Perri,Leeds United,1,GK,BRA,Goalkeeper,0.0,1997-12-10,2025-07-26,197.0,98.0,Right
+226182.0,Jayden,Bogle,Jayden Bogle,Leeds United,2,DF,ENG,Defender,0.0,2000-07-27,2024-07-20,178.0,69.0,Right
+243526.0,Gabriel,Gudmundsson,Gabriel Gudmundsson,Leeds United,3,DF,SWE,Defender,0.0,1999-04-29,2025-07-08,180.0,74.0,Left
+199598.0,Ethan,Ampadu,Ethan Ampadu,Leeds United,4,MF,WAL,Defender,0.0,2000-09-14,2023-07-19,182.0,78.0,Right
+222694.0,Pascal,Struijk,Pascal Struijk,Leeds United,5,DF,NED,Defender,0.0,1999-08-11,2018-04-12,190.0,79.0,Left
+214225.0,Joe,Rodon,Joe Rodon,Leeds United,6,DF,WAL,Defender,0.0,1997-10-22,2024-07-02,193.0,88.0,Right
+200617.0,Daniel,James,Daniel James,Leeds United,7,MF,WAL,Midfielder,0.0,1997-11-10,2021-08-31,171.0,63.0,Right
+180135.0,Sean,Longstaff,Sean Longstaff,Leeds United,8,MF,ENG,Midfielder,0.0,1997-10-30,2025-07-18,180.0,65.0,Right
+177815.0,Dominic,Calvert-Lewin,Dominic Calvert-Lewin,Leeds United,9,FW,ENG,Forward,0.0,1997-03-16,2025-08-15,187.0,71.0,Right
+235826.0,Joël,Piroe,Joël Piroe,Leeds United,10,FW,NED,Forward,0.0,1999-08-02,2023-08-24,181.0,74.0,Left
+427637.0,Brenden,Aaronson,Brenden Aaronson,Leeds United,11,MF,USA,Midfielder,0.0,2000-10-22,2022-07-01,177.0,68.0,Right
+174594.0,Lukas,Nmecha,Lukas Nmecha,Leeds United,14,FW,GER,Forward,0.0,1998-12-14,2025-07-01,185.0,80.0,Right
+434752.0,Jaka,Bijol,Jaka Bijol,Leeds United,15,DF,SVN,Defender,0.0,1999-02-05,2025-06-23,190.0,85.0,Right
+437495.0,Illan,Meslier,Illan Meslier,Leeds United,16,GK,FRA,Goalkeeper,0.0,2000-03-02,2020-07-27,197.0,74.0,Right
+466525.0,Anton,Stach,Anton Stach,Leeds United,18,MF,GER,Midfielder,0.0,1998-11-15,2025-07-22,193.0,86.0,Both
+435997.0,Noah,Okafor,Noah Okafor,Leeds United,19,FW,SUI,Forward,0.0,2000-05-24,2025-08-21,185.0,85.0,Right
+221399.0,Jack,Harrison,Jack Harrison,Leeds United,20,MF,ENG,Forward,0.0,1996-11-20,2021-07-02,175.0,70.0,Left
+97846.0,Alex,Cairns,Alex Cairns,Leeds United,21,GK,ENG,Goalkeeper,0.0,1993-01-04,2024-07-08,183.0,72.0,Right
+248056.0,Ao,Tanaka,Ao Tanaka,Leeds United,22,MF,JPN,Midfielder,0.0,1998-09-10,2024-08-30,180.0,75.0,Right
+437738.0,Sebastiaan,Bornauw,Sebastiaan Bornauw,Leeds United,23,DF,BEL,Defender,0.0,1999-03-22,2025-07-01,191.0,81.0,Right
+220627.0,James,Justin,James Justin,Leeds United,24,DF,ENG,Defender,0.0,1998-02-23,2025-08-25,183.0,80.0,Right
+113564.0,Sam,Byram,Sam Byram,Leeds United,25,DF,ENG,Defender,0.0,1993-09-16,2023-08-05,180.0,72.0,Right
+59735.0,Karl,Darlow,Karl Darlow,Leeds United,26,GK,WAL,Goalkeeper,0.0,1990-10-08,2023-07-29,190.0,88.0,Right
+492859.0,Wilfried,Gnonto,Wilfried Gnonto,Leeds United,29,FW,ITA,Forward,0.0,2003-11-05,2022-09-01,172.0,65.0,Right
+486520.0,Ilia,Gruev,Ilia Gruev,Leeds United,44,MF,BUL,Midfielder,0.0,2000-05-06,2023-08-31,185.0,72.0,Left
+116535.0,Alisson,Becker,Alisson Becker,Liverpool,1,GK,BRA,Goalkeeper,0.0,1992-10-02,2018-07-19,193.0,91.0,Right
+171287.0,Joe,Gomez,Joe Gomez,Liverpool,2,DF,ENG,Defender,0.0,1997-05-23,2015-06-20,188.0,80.0,Right
+158983.0,Wataru,Endo,Wataru Endo,Liverpool,3,MF,JPN,Midfielder,0.0,1993-02-09,2023-08-18,178.0,76.0,Right
+,,,Virgil van Dijk,Liverpool,4,DF,NED,,,,,,,
+204716.0,Ibrahima,Konaté,Ibrahima Konaté,Liverpool,5,DF,FRA,Defender,0.0,1999-05-25,2021-07-01,194.0,95.0,Right
+544877.0,Milos,Kerkez,Milos Kerkez,Liverpool,6,DF,HUN,Defender,0.0,2003-11-07,2025-06-26,180.0,71.0,Left
+494595.0,Florian,Wirtz,Florian Wirtz,Liverpool,7,FW,GER,Midfielder,0.0,2003-05-03,2025-06-20,176.0,70.0,Right
+424876.0,Dominik,Szoboszlai,Dominik Szoboszlai,Liverpool,8,MF,HUN,Midfielder,0.0,2000-10-25,2023-07-02,186.0,74.0,Right
+219168.0,Alexander,Isak,Alexander Isak,Liverpool,9,FW,SWE,Forward,0.0,1999-09-21,2025-09-01,192.0,77.0,Right
+,,,Alexis Mac Allister,Liverpool,10,MF,ARG,,,,,,,
+,,,Mohamed Salah,Liverpool,11,FW,EGY,,,,,,,
+492777.0,Conor,Bradley,Conor Bradley,Liverpool,12,DF,NIR,Defender,0.0,2003-07-09,2023-09-25,180.0,64.0,Right
+223541.0,Federico,Chiesa,Federico Chiesa,Liverpool,14,FW,ITA,Forward,0.0,1997-10-25,2024-08-29,175.0,70.0,Right
+647681.0,Giovanni,Leoni,Giovanni Leoni,Liverpool,15,DF,ITA,Defender,0.0,2006-12-21,2025-08-15,189.0,76.0,Right
+206915.0,Curtis,Jones,Curtis Jones,Liverpool,17,MF,ENG,Midfielder,0.0,2001-01-30,2018-04-06,185.0,78.0,Right
+243298.0,Cody,Gakpo,Cody Gakpo,Liverpool,18,FW,NED,Forward,0.0,1999-05-07,2023-01-01,193.0,76.0,Right
+,,,Hugo Ekitike,Liverpool,22,FW,FRA,,,,,,,
+449027.0,Giorgi,Mamardashvili,Giorgi Mamardashvili,Liverpool,25,GK,GEO,Goalkeeper,0.0,2000-09-29,2024-08-27,197.0,90.0,Left
+122798.0,Andy,Robertson,Andy Robertson,Liverpool,26,DF,SCO,Defender,0.0,1994-03-11,2017-07-21,178.0,64.0,Left
+155503.0,Freddie,Woodman,Freddie Woodman,Liverpool,28,GK,ENG,Goalkeeper,0.0,1997-03-04,2025-07-01,188.0,83.0,Right
+216094.0,Jeremie,Frimpong,Jeremie Frimpong,Liverpool,30,DF,NED,Defender,0.0,2000-12-10,2025-06-01,171.0,63.0,Right
+441266.0,Ryan,Gravenberch,Ryan Gravenberch,Liverpool,38,MF,NED,Midfielder,0.0,2002-05-16,2023-09-01,190.0,83.0,Right
+586268.0,Ármin,Pécsi,Ármin Pécsi,Liverpool,41,GK,HUN,Goalkeeper,0.0,2005-02-24,2025-06-07,190.0,,Right
+591386.0,Trey,Nyoni,Trey Nyoni,Liverpool,42,MF,ENG,Midfielder,0.0,2007-06-30,2023-11-11,180.0,75.0,Right
+535928.0,Stefan,Bajcetic,Stefan Bajcetic,Liverpool,43,MF,ESP,Midfielder,0.0,2004-10-22,2022-07-11,185.0,77.0,Right
+219937.0,Rhys,Williams,Rhys Williams,Liverpool,46,DF,ENG,Defender,0.0,2001-02-03,2020-09-23,195.0,82.0,Right
+489580.0,Calvin,Ramsay,Calvin Ramsay,Liverpool,47,DF,SCO,Defender,0.0,2003-07-31,2022-06-19,177.0,68.0,Right
+611922.0,Rio,Ngumoha,Rio Ngumoha,Liverpool,73,FW,ENG,Forward,0.0,2008-08-29,2024-12-17,170.0,75.0,Right
+432720.0,James,Trafford,James Trafford,Manchester City,1,GK,ENG,Goalkeeper,0.0,2002-10-10,2025-07-29,197.0,83.0,Right
+171314.0,Rúben,Dias,Rúben Dias,Manchester City,3,DF,POR,Defender,0.0,1997-05-14,2020-09-29,187.0,76.0,Right
+433036.0,Tijjani,Reijnders,Tijjani Reijnders,Manchester City,4,MF,NED,Midfielder,0.0,1998-07-29,2025-06-10,178.0,73.0,Right
+97299.0,John,Stones,John Stones,Manchester City,5,DF,ENG,Defender,0.0,1994-05-28,2016-08-09,188.0,80.0,Right
+126184.0,Nathan,Aké,Nathan Aké,Manchester City,6,DF,NED,Defender,0.0,1995-02-18,2020-08-05,180.0,75.0,Left
+438234.0,Omar,Marmoush,Omar Marmoush,Manchester City,7,FW,EGY,Forward,0.0,1999-02-07,2025-01-23,180.0,81.0,Right
+,,,Mateo Kovačić,Manchester City,8,MF,CRO,,,,,,,
+223094.0,Erling,Haaland,Erling Haaland,Manchester City,9,FW,NOR,Forward,0.0,2000-07-21,2022-07-01,195.0,88.0,Left
+466052.0,Rayan,Cherki,Rayan Cherki,Manchester City,10,MF,FRA,Midfielder,0.0,2003-08-17,2025-06-10,180.0,71.0,Both
+248875.0,Jérémy,Doku,Jérémy Doku,Manchester City,11,MF,BEL,Forward,0.0,2002-05-27,2023-08-24,173.0,66.0,Right
+122074.0,Marcus,Bettinelli,Marcus Bettinelli,Manchester City,13,GK,ENG,Goalkeeper,0.0,1992-05-24,2025-06-10,193.0,82.0,Right
+465694.0,Nico,González,Nico González,Manchester City,14,MF,ESP,Midfielder,0.0,2002-01-03,2025-02-03,189.0,88.0,Right
+,,,Rodri,Manchester City,16,MF,ESP,,,,,,,
+88248.0,Stefan,Ortega,Stefan Ortega,Manchester City,18,GK,GER,Goalkeeper,0.0,1992-11-06,2022-07-01,185.0,88.0,Right
+165809.0,Bernardo,Silva,Bernardo Silva,Manchester City,20,MF,POR,Midfielder,0.0,1994-08-10,2017-07-01,173.0,65.0,Left
+448514.0,Rayan,Aït-Nouri,Rayan Aït-Nouri,Manchester City,21,DF,ALG,Defender,0.0,2001-06-06,2025-06-09,180.0,70.0,Left
+,,,Joško Gvardiol,Manchester City,24,DF,CRO,,,,,,,
+204936.0,Gianluigi,Donnarumma,Gianluigi Donnarumma,Manchester City,25,GK,ITA,Goalkeeper,0.0,1999-02-25,2025-09-01,196.0,90.0,Right
+,,,Savinho,Manchester City,26,MF,BRA,,,,,,,
+465351.0,Matheus,Nunes,Matheus Nunes,Manchester City,27,MF,POR,Midfielder,0.0,1998-08-27,2023-09-01,183.0,78.0,Right
+472769.0,Nico,O'Reilly,Nico O'Reilly,Manchester City,33,MF,ENG,Midfielder,0.0,2005-03-21,2022-12-16,177.0,77.0,Left
+155405.0,Kalvin,Phillips,Kalvin Phillips,Manchester City,44,MF,ENG,Midfielder,0.0,1995-12-02,2022-07-04,178.0,72.0,Right
+578153.0,Abdukodir,Khusanov,Abdukodir Khusanov,Manchester City,45,DF,UZB,Defender,0.0,2004-02-29,2025-01-20,186.0,84.0,Right
+209244.0,Phil,Foden,Phil Foden,Manchester City,47,MF,ENG,Midfielder,0.0,2000-05-28,2016-12-05,171.0,63.0,Left
+477555.0,Oscar,Bobb,Oscar Bobb,Manchester City,52,MF,NOR,Midfielder,0.0,2003-07-12,2022-01-06,177.0,70.0,Left
+477064.0,Rico,Lewis,Rico Lewis,Manchester City,82,DF,ENG,Defender,0.0,2004-11-21,2022-07-16,170.0,64.0,Right
+,,,Altay Bayındır,Manchester United,1,GK,TUR,,,,,,,
+,,,Diogo Dalot,Manchester United,2,DF,POR,,,,,,,
+230001.0,Noussair,Mazraoui,Noussair Mazraoui,Manchester United,3,DF,MAR,Defender,0.0,1997-11-14,2024-08-13,183.0,63.0,Right
+,,,Matthijs de Ligt,Manchester United,4,DF,NED,,,,,,,
+95658.0,Harry,Maguire,Harry Maguire,Manchester United,5,DF,ENG,Defender,0.0,1993-03-05,2019-08-05,194.0,90.0,Right
+221820.0,Lisandro,Martínez,Lisandro Martínez,Manchester United,6,DF,ARG,Defender,0.0,1998-01-18,2022-07-17,175.0,72.0,Left
+184341.0,Mason,Mount,Mason Mount,Manchester United,7,MF,ENG,Midfielder,0.0,1999-01-10,2023-07-05,181.0,76.0,Right
+141746.0,Bruno,Fernandes,Bruno Fernandes,Manchester United,8,MF,POR,Midfielder,0.0,1994-09-08,2020-01-30,179.0,66.0,Right
+430871.0,Matheus,Cunha,Matheus Cunha,Manchester United,10,FW,BRA,Forward,0.0,1999-05-27,2025-06-01,183.0,76.0,Right
+458249.0,Joshua,Zirkzee,Joshua Zirkzee,Manchester United,11,FW,NED,Forward,0.0,2001-05-22,2024-07-17,193.0,84.0,Right
+222690.0,Tyrell,Malacia,Tyrell Malacia,Manchester United,12,DF,NED,Defender,0.0,1999-08-17,2022-07-05,170.0,67.0,Left
+596777.0,Patrick,Dorgu,Patrick Dorgu,Manchester United,13,DF,DEN,Defender,0.0,2004-10-26,2025-02-02,185.0,68.0,Left
+550864.0,Leny,Yoro,Leny Yoro,Manchester United,15,DF,FRA,Defender,0.0,2005-11-13,2024-07-19,190.0,83.0,Right
+493250.0,Amad,Diallo,Amad Diallo,Manchester United,16,FW,CIV,Forward,0.0,2002-07-11,2021-01-07,173.0,72.0,Left
+,,,Casemiro,Manchester United,18,MF,BRA,,,,,,,
+446008.0,Bryan,Mbeumo,Bryan Mbeumo,Manchester United,19,FW,CMR,Forward,0.0,1999-08-07,2025-07-21,173.0,64.0,Left
+21205.0,Tom,Heaton,Tom Heaton,Manchester United,22,GK,ENG,Goalkeeper,0.0,1986-04-15,2021-07-02,188.0,85.0,Right
+106760.0,Luke,Shaw,Luke Shaw,Manchester United,23,DF,ENG,Defender,0.0,1995-07-12,2014-07-01,178.0,80.0,Left
+232112.0,Manuel,Ugarte,Manuel Ugarte,Manchester United,25,MF,URU,Midfielder,0.0,2001-04-11,2024-08-30,182.0,77.0,Right
+606745.0,Ayden,Heaven,Ayden Heaven,Manchester United,26,DF,ENG,Defender,0.0,2006-09-22,2025-02-01,189.0,77.0,Left
+,,,Benjamin Šeško,Manchester United,30,FW,SVN,,,,,,,
+465247.0,Senne,Lammens,Senne Lammens,Manchester United,31,GK,BEL,Goalkeeper,0.0,2002-07-07,2025-09-01,193.0,70.0,Right
+596047.0,Chido,Obi,Chido Obi,Manchester United,32,FW,DEN,Forward,0.0,2007-11-29,2025-02-15,188.0,68.0,Right
+547676.0,Tyler,Fredricson,Tyler Fredricson,Manchester United,33,DF,ENG,Defender,0.0,2005-02-23,2022-09-07,184.0,70.0,Right
+661712.0,Diego,León,Diego León,Manchester United,35,DF,PAR,Defender,0.0,2007-04-03,2025-07-05,177.0,82.0,Left
+516895.0,Kobbie,Mainoo,Kobbie Mainoo,Manchester United,37,MF,ENG,Midfielder,0.0,2005-04-19,2022-10-15,175.0,72.0,Right
+98747.0,Nick,Pope,Nick Pope,Newcastle United,1,GK,ENG,Goalkeeper,0.0,1992-04-19,2022-06-23,191.0,76.0,Right
+77794.0,Kieran,Trippier,Kieran Trippier,Newcastle United,2,DF,ENG,Defender,0.0,1990-09-19,2022-01-07,178.0,71.0,Right
+487838.0,Lewis,Hall,Lewis Hall,Newcastle United,3,DF,ENG,Defender,0.0,2004-09-08,2024-07-01,179.0,73.0,Left
+220237.0,Sven,Botman,Sven Botman,Newcastle United,4,DF,NED,Defender,0.0,2000-01-12,2022-06-28,193.0,81.0,Left
+119471.0,Fabian,Schär,Fabian Schär,Newcastle United,5,DF,SUI,Defender,0.0,1991-12-20,2018-07-26,186.0,84.0,Right
+,,,Jamaal Lascelles ),Newcastle United,6,DF,ENG,,,,,,,
+,,,Joelinton,Newcastle United,7,MF,BRA,,,,,,,
+432422.0,Sandro,Tonali,Sandro Tonali,Newcastle United,8,MF,ITA,Midfielder,0.0,2000-05-08,2023-07-03,181.0,79.0,Right
+216646.0,Yoane,Wissa,Yoane Wissa,Newcastle United,9,FW,COD,Forward,0.0,1996-09-03,2025-09-01,176.0,74.0,Right
+232826.0,Anthony,Gordon,Anthony Gordon,Newcastle United,10,FW,ENG,Forward,0.0,2001-02-24,2023-01-29,183.0,72.0,Right
+201666.0,Harvey,Barnes,Harvey Barnes,Newcastle United,11,FW,ENG,Midfielder,0.0,1997-12-09,2023-07-23,174.0,66.0,Right
+465642.0,Malick,Thiaw,Malick Thiaw,Newcastle United,12,DF,GER,Defender,0.0,2001-08-08,2025-08-12,191.0,80.0,Both
+111773.0,Emil,Krafth,Emil Krafth,Newcastle United,17,DF,SWE,Defender,0.0,1994-08-02,2019-08-08,184.0,83.0,Right
+538207.0,William,Osula,William Osula,Newcastle United,18,FW,DEN,Forward,0.0,2003-08-04,2024-08-08,180.0,81.0,Right
+449434.0,Anthony,Elanga,Anthony Elanga,Newcastle United,20,FW,SWE,Forward,0.0,2002-04-27,2025-07-11,178.0,70.0,Right
+441191.0,Tino,Livramento,Tino Livramento,Newcastle United,21,DF,ENG,Defender,0.0,2002-11-12,2023-08-08,182.0,65.0,Right
+114243.0,Jacob,Murphy,Jacob Murphy,Newcastle United,23,MF,ENG,Midfielder,0.0,1995-02-24,2017-07-19,179.0,74.0,Right
+19236.0,John,Ruddy,John Ruddy,Newcastle United,26,GK,ENG,Goalkeeper,0.0,1986-10-24,2024-07-01,192.0,96.0,Right
+470313.0,Nick,Woltemade,Nick Woltemade,Newcastle United,27,FW,GER,Forward,0.0,2002-02-14,2025-08-30,198.0,90.0,Right
+200089.0,Joe,Willock,Joe Willock,Newcastle United,28,MF,ENG,Midfielder,0.0,1999-08-20,2021-08-13,179.0,71.0,Right
+81441.0,Mark,Gillespie,Mark Gillespie,Newcastle United,29,GK,ENG,Goalkeeper,0.0,1992-03-27,2020-07-27,192.0,83.0,Right
+441024.0,Harrison,Ashby,Harrison Ashby,Newcastle United,30,DF,SCO,Defender,0.0,2001-11-14,2023-01-31,179.0,62.0,Right
+225321.0,Aaron,Ramsdale,Aaron Ramsdale,Newcastle United,32,GK,ENG,Goalkeeper,1.0,1998-05-14,2025-08-02,190.0,88.0,Right
+78916.0,Dan,Burn,Dan Burn,Newcastle United,33,DF,ENG,Defender,0.0,1992-05-09,2022-01-31,198.0,87.0,Left
+545477.0,Alex,Murphy,Alex Murphy,Newcastle United,37,DF,IRL,Defender,0.0,2004-06-25,2023-07-19,188.0,78.0,Left
+,,,Bruno Guimarães,Newcastle United,39,MF,BRA,,,,,,,
+232653.0,Jacob,Ramsey,Jacob Ramsey,Newcastle United,41,MF,ENG,Midfielder,0.0,2001-05-28,2025-08-17,180.0,75.0,Right
+547719.0,Lewis,Miley,Lewis Miley,Newcastle United,67,MF,ENG,Midfielder,0.0,2006-05-01,2023-02-01,185.0,72.0,Right
+215136.0,Neco,Williams,Neco Williams,Nottingham Forest,3,DF,WAL,Defender,0.0,2001-04-13,2022-07-11,183.0,72.0,Right
+,,,Morato,Nottingham Forest,4,DF,BRA,,,,,,,
+,,,Murillo,Nottingham Forest,5,DF,BRA,,,,,,,
+210462.0,Ibrahim,Sangaré,Ibrahim Sangaré,Nottingham Forest,6,MF,CIV,Midfielder,0.0,1997-12-02,2023-09-01,191.0,77.0,Right
+209046.0,Callum,Hudson-Odoi,Callum Hudson-Odoi,Nottingham Forest,7,FW,ENG,Forward,0.0,2000-11-07,2023-09-01,182.0,76.0,Right
+215379.0,Elliot,Anderson,Elliot Anderson,Nottingham Forest,8,MF,ENG,Midfielder,0.0,2002-11-06,2024-07-01,179.0,69.0,Right
+210156.0,Taiwo,Awoniyi,Taiwo Awoniyi,Nottingham Forest,9,FW,NGA,Forward,0.0,1997-08-12,2022-06-25,183.0,84.0,Right
+222531.0,Morgan,Gibbs-White,Morgan Gibbs-White,Nottingham Forest,10,MF,ENG,Midfielder,0.0,2000-01-27,2022-08-19,171.0,66.0,Right
+60689.0,Chris,Wood,Chris Wood,Nottingham Forest,11,FW,NZL,Forward,0.0,1991-12-07,2023-07-01,191.0,81.0,Right
+,,,Douglas Luiz,Nottingham Forest,12,MF,BRA,,,,,,,
+,,,John Victor,Nottingham Forest,13,GK,BRA,,,,,,,
+456512.0,Dan,Ndoye,Dan Ndoye,Nottingham Forest,14,FW,SUI,Forward,0.0,2000-10-25,2025-07-31,184.0,79.0,Right
+465680.0,Arnaud,Kalimuendo,Arnaud Kalimuendo,Nottingham Forest,15,FW,FRA,Forward,0.0,2002-01-20,2025-08-18,178.0,79.0,Right
+250199.0,Nicolás,Domínguez,Nicolás Domínguez,Nottingham Forest,16,MF,ARG,Midfielder,0.0,1998-06-28,2023-09-01,179.0,73.0,Right
+107265.0,Angus,Gunn,Angus Gunn,Nottingham Forest,18,GK,SCO,Goalkeeper,0.0,1996-01-22,2025-08-06,196.0,77.0,Right
+,,,Igor Jesus,Nottingham Forest,19,FW,BRA,,,,,,,
+503301.0,Omari,Hutchinson,Omari Hutchinson,Nottingham Forest,21,FW,ENG,Forward,0.0,2003-10-30,2025-08-16,174.0,65.0,Left
+204968.0,Ryan,Yates,Ryan Yates,Nottingham Forest,22,MF,ENG,Midfielder,0.0,1997-11-21,2018-08-01,190.0,87.0,Right
+,,,Jair Cunha,Nottingham Forest,23,DF,BRA,,,,,,,
+432714.0,James,McAtee,James McAtee,Nottingham Forest,24,MF,ENG,Midfielder,0.0,2002-10-18,2025-08-16,180.0,72.0,Left
+85633.0,Matz,Sels,Matz Sels,Nottingham Forest,26,GK,BEL,Goalkeeper,0.0,1992-02-26,2024-02-01,188.0,75.0,Right
+476887.0,Dilane,Bakwa,Dilane Bakwa,Nottingham Forest,29,FW,FRA,Forward,0.0,2002-08-26,2025-09-01,180.0,75.0,Right
+90585.0,Willy,Boly,Willy Boly,Nottingham Forest,30,DF,CIV,Defender,0.0,1991-02-03,2022-09-01,195.0,92.0,Right
+,,,Nikola Milenković,Nottingham Forest,31,DF,SRB,,,,,,,
+159506.0,Ola,Aina,Ola Aina,Nottingham Forest,34,DF,NGA,Defender,0.0,1996-10-08,2023-07-22,184.0,82.0,Right
+206325.0,Oleksandr,Zinchenko,Oleksandr Zinchenko,Nottingham Forest,35,DF,UKR,Defender,1.0,1996-12-15,2025-09-01,175.0,64.0,Left
+500151.0,Nicolò,Savona,Nicolò Savona,Nottingham Forest,37,DF,ITA,Defender,0.0,2003-03-19,2025-08-30,192.0,80.0,Right
+549067.0,Zach,Abbott,Zach Abbott,Nottingham Forest,44,DF,ENG,Defender,0.0,2006-05-13,2022-08-22,180.0,70.0,Right
+232571.0,Anthony,Patterson,Anthony Patterson,Sunderland,1,GK,ENG,Goalkeeper,0.0,2000-05-10,2018-10-09,189.0,77.0,Right
+461195.0,Dennis,Cirkin,Dennis Cirkin,Sunderland,3,DF,ENG,Defender,0.0,2002-04-06,2021-08-11,182.0,78.0,Left
+223336.0,Dan,Neil,Dan Neil,Sunderland,4,MF,ENG,Midfielder,0.0,2001-12-13,2018-11-01,185.0,62.0,Left
+,,,Daniel Ballard,Sunderland,5,DF,NIR,,,,,,,
+247955.0,Lutsharel,Geertruida,Lutsharel Geertruida,Sunderland,6,DF,NED,Defender,1.0,2000-07-18,2025-09-01,184.0,69.0,Right
+549912.0,Chemsdine,Talbi,Chemsdine Talbi,Sunderland,7,MF,MAR,Forward,0.0,2005-05-09,2025-07-09,175.0,65.0,Right
+441264.0,Brian,Brobbey,Brian Brobbey,Sunderland,9,FW,NED,Forward,0.0,2002-02-01,2025-09-01,180.0,78.0,Right
+554197.0,Chris,Rigg,Chris Rigg,Sunderland,11,MF,ENG,Midfielder,0.0,2007-06-18,2022-12-31,177.0,65.0,Left
+564406.0,Eliezer,Mayenda,Eliezer Mayenda,Sunderland,12,FW,ESP,Forward,0.0,2005-05-08,2023-07-28,180.0,75.0,Left
+167512.0,Luke,O'Nien,Luke O'Nien,Sunderland,13,MF,ENG,Midfielder,0.0,1994-11-21,2018-07-30,174.0,74.0,Right
+461199.0,Romaine,Mundle,Romaine Mundle,Sunderland,14,FW,ENG,Forward,0.0,2003-04-24,2024-02-01,180.0,61.0,Right
+201895.0,Omar,Alderete,Omar Alderete,Sunderland,15,DF,PAR,Defender,0.0,1996-12-26,2025-08-12,188.0,77.0,Left
+,,,Blondy Nna Noukeu,Sunderland,16,GK,CMR,,,,,,,
+434399.0,Reinildo,Mandava,Reinildo Mandava,Sunderland,17,DF,MOZ,Defender,0.0,1994-01-21,2025-07-08,183.0,73.0,Left
+437505.0,Wilson,Isidor,Wilson Isidor,Sunderland,18,FW,FRA,Forward,0.0,2000-08-27,2025-02-01,186.0,79.0,Right
+547027.0,Habib,Diarra,Habib Diarra,Sunderland,19,MF,SEN,Midfielder,0.0,2004-01-03,2025-07-01,179.0,74.0,Right
+200834.0,Nordi,Mukiele,Nordi Mukiele,Sunderland,20,DF,FRA,Defender,0.0,1997-11-01,2025-08-17,187.0,84.0,Right
+74854.0,Simon,Moore,Simon Moore,Sunderland,21,GK,ENG,Goalkeeper,0.0,1990-05-19,2024-07-01,191.0,83.0,Right
+498016.0,Robin,Roefs,Robin Roefs,Sunderland,22,GK,NED,Goalkeeper,0.0,2003-01-17,2025-08-01,193.0,72.0,Right
+535818.0,Simon,Adingra,Simon Adingra,Sunderland,24,MF,CIV,Forward,0.0,2002-01-01,2025-07-10,175.0,68.0,Right
+110504.0,Bertrand,Traoré,Bertrand Traoré,Sunderland,25,MF,BFA,Forward,0.0,1995-09-06,2025-09-01,181.0,73.0,Left
+105717.0,Arthur,Masuaku,Arthur Masuaku,Sunderland,26,DF,DR Congo,Defender,0.0,1993-11-07,2025-08-10,179.0,80.0,Left
+577669.0,Noah,Sadiki,Noah Sadiki,Sunderland,27,MF,DR Congo,Midfielder,0.0,2004-12-17,2025-07-04,165.0,58.0,Right
+,,,Enzo Le Fée,Sunderland,28,MF,FRA,,,,,,,
+611975.0,Ahmed,Abdullahi,Ahmed Abdullahi,Sunderland,29,FW,NGA,Forward,0.0,2004-06-19,2024-08-31,181.0,75.0,Right
+487676.0,Trai,Hume,Trai Hume,Sunderland,32,DF,NIR,Defender,0.0,2002-03-18,2022-01-04,180.0,75.0,Right
+477547.0,Leo,Hjelde,Leo Hjelde,Sunderland,33,DF,NOR,Defender,0.0,2003-08-26,2024-01-30,190.0,75.0,Left
+84450.0,Granit,Xhaka,Granit Xhaka,Sunderland,34,MF,Switzerland,Midfielder,0.0,1992-09-27,2025-07-30,186.0,80.0,Left
+215460.0,Ian,Poveda,Ian Poveda,Sunderland,36,MF,COL,Forward,0.0,2000-02-09,2024-07-24,167.0,64.0,Left
+514613.0,Zak,Johnson,Zak Johnson,Sunderland,41,DF,ENG,Defender,0.0,2004-07-30,2021-10-12,183.0,78.0,Right
+220684.0,Aji,Alese,Aji Alese,Sunderland,42,DF,ENG,Defender,0.0,2001-01-17,2022-07-15,192.0,80.0,Right
+232820.0,Joe,Anderson,Joe Anderson,Sunderland,45,DF,ENG,Defender,0.0,2001-02-06,2023-01-31,188.0,81.0,Left
+184254.0,Guglielmo,Vicario,Guglielmo Vicario,Tottenham Hotspur,1,GK,ITA,Goalkeeper,0.0,1996-10-07,2023-07-01,194.0,83.0,Right
+,,,Radu Drăgușin,Tottenham Hotspur,3,DF,ROU,,,,,,,
+135720.0,Kevin,Danso,Kevin Danso,Tottenham Hotspur,4,DF,AUT,Defender,0.0,1998-09-19,2025-07-01,190.0,85.0,Right
+,,,João Palhinha,Tottenham Hotspur,6,MF,POR,,,,,,,
+493362.0,Xavi,Simons,Xavi Simons,Tottenham Hotspur,7,MF,NED,Midfielder,0.0,2003-04-21,2025-08-29,179.0,58.0,Right
+227127.0,Yves,Bissouma,Yves Bissouma,Tottenham Hotspur,8,MF,MLI,Midfielder,0.0,1996-08-30,2022-06-17,182.0,80.0,Right
+,,,Richarlison,Tottenham Hotspur,9,FW,BRA,,,,,,,
+172780.0,James,Maddison,James Maddison,Tottenham Hotspur,10,MF,ENG,Midfielder,0.0,1996-11-23,2023-06-28,175.0,73.0,Right
+511499.0,Mathys,Tel,Mathys Tel,Tottenham Hotspur,11,FW,FRA,Forward,0.0,2005-04-27,2025-07-01,183.0,77.0,Right
+487053.0,Destiny,Udogie,Destiny Udogie,Tottenham Hotspur,13,DF,ITA,Defender,0.0,2002-11-28,2022-08-16,186.0,73.0,Left
+547701.0,Archie,Gray,Archie Gray,Tottenham Hotspur,14,MF,ENG,Midfielder,0.0,2006-03-12,2024-07-02,187.0,70.0,Right
+570526.0,Lucas,Bergvall,Lucas Bergvall,Tottenham Hotspur,15,MF,SWE,Midfielder,0.0,2006-02-02,2024-07-01,187.0,74.0,Right
+221632.0,Cristian,Romero,Cristian Romero,Tottenham Hotspur,17,DF,ARG,Defender,0.0,1998-04-27,2022-08-30,185.0,78.0,Right
+154566.0,Dominic,Solanke,Dominic Solanke,Tottenham Hotspur,19,FW,ENG,Forward,0.0,1997-09-14,2024-08-10,187.0,80.0,Right
+460842.0,Mohammed,Kudus,Mohammed Kudus,Tottenham Hotspur,20,FW,GHA,Midfielder,0.0,2000-08-02,2025-07-10,177.0,70.0,Left
+445044.0,Dejan,Kulusevski,Dejan Kulusevski,Tottenham Hotspur,21,FW,SWE,Midfielder,0.0,2000-04-25,2023-07-01,186.0,80.0,Left
+242898.0,Brennan,Johnson,Brennan Johnson,Tottenham Hotspur,22,FW,WAL,Forward,0.0,2001-05-23,2023-09-01,186.0,73.0,Right
+441164.0,Pedro,Porro,Pedro Porro,Tottenham Hotspur,23,DF,ESP,Defender,0.0,1999-09-13,2023-07-01,173.0,69.0,Right
+232859.0,Djed,Spence,Djed Spence,Tottenham Hotspur,24,DF,ENG,Defender,0.0,2000-08-09,2022-07-19,185.0,71.0,Right
+,,,Kōta Takai,Tottenham Hotspur,25,DF,JPN,,,,,,,
+550839.0,Wilson,Odobert,Wilson Odobert,Tottenham Hotspur,28,FW,FRA,Forward,0.0,2004-11-28,2024-08-16,182.0,76.0,Right
+,,,Pape Matar Sarr,Tottenham Hotspur,29,MF,SEN,,,,,,,
+202993.0,Rodrigo,Bentancur,Rodrigo Bentancur,Tottenham Hotspur,30,MF,URU,Midfielder,0.0,1997-06-25,2022-01-31,187.0,72.0,Right
+,,,Antonín Kinský,Tottenham Hotspur,31,GK,CZE,,,,,,,
+115556.0,Ben,Davies,Ben Davies,Tottenham Hotspur,33,DF,WAL,Defender,0.0,1993-04-24,2014-07-23,181.0,77.0,Left
+,,,Micky van de Ven,Tottenham Hotspur,37,DF,NED,,,,,,,
+,,,Randal Kolo Muani,Tottenham Hotspur,39,FW,FRA,,,,,,,
+214572.0,Brandon,Austin,Brandon Austin,Tottenham Hotspur,40,GK,USA,Goalkeeper,0.0,1999-01-08,2017-07-22,188.0,82.0,Right
+490145.0,Dane,Scarlett,Dane Scarlett,Tottenham Hotspur,44,FW,ENG,Forward,0.0,2004-03-24,2020-08-21,180.0,76.0,Right
+467189.0,Mads,Hermansen,Mads Hermansen,West Ham United,1,GK,DEN,Goalkeeper,0.0,2000-07-11,2025-08-09,187.0,81.0,Right
+158534.0,Kyle,Walker-Peters,Kyle Walker-Peters,West Ham United,2,DF,ENG,Defender,0.0,1997-04-13,2025-07-20,173.0,62.0,Right
+214048.0,Maximilian,Kilman,Maximilian Kilman,West Ham United,3,DF,ENG,Defender,0.0,1997-05-23,2024-07-05,194.0,89.0,Left
+,,,Igor Julio,West Ham United,5,DF,BRA,,,,,,,
+450070.0,Crysencio,Summerville,Crysencio Summerville,West Ham United,7,FW,NED,Forward,0.0,2001-10-30,2024-08-03,174.0,64.0,Right
+101178.0,James,Ward-Prowse,James Ward-Prowse,West Ham United,8,MF,ENG,Midfielder,0.0,1994-11-01,2023-08-14,177.0,66.0,Right
+75115.0,Callum,Wilson,Callum Wilson,West Ham United,9,FW,ENG,Forward,0.0,1992-02-27,2025-08-02,180.0,66.0,Both
+,,,Lucas Paquetá,West Ham United,10,MF,BRA,,,,,,,
+91889.0,Niclas,Füllkrug,Niclas Füllkrug,West Ham United,11,FW,GER,Forward,0.0,1993-02-09,2024-08-05,189.0,83.0,Right
+,,,El Hadji Malick Diouf,West Ham United,12,DF,SEN,,,,,,,
+233963.0,Konstantinos,Mavropanos,Konstantinos Mavropanos,West Ham United,15,DF,GRE,Defender,0.0,1997-12-11,2023-08-22,194.0,94.0,Right
+,,,Luis Guilherme,West Ham United,17,MF,BRA,,,,,,,
+551226.0,Mateus,Fernandes,Mateus Fernandes,West Ham United,18,MF,POR,Midfielder,0.0,2004-07-10,2025-08-29,178.0,72.0,Right
+178186.0,Jarrod,Bowen,Jarrod Bowen,West Ham United,20,FW,ENG,Forward,0.0,1996-12-20,2020-01-31,176.0,70.0,Left
+,,,Łukasz Fabiański,West Ham United,22,GK,POL,,,,,,,
+84182.0,Alphonse,Areola,Alphonse Areola,West Ham United,23,GK,FRA,Goalkeeper,0.0,1993-02-27,2022-07-01,195.0,94.0,Right
+197024.0,Guido,Rodríguez,Guido Rodríguez,West Ham United,24,MF,ARG,Midfielder,0.0,1994-04-12,2024-08-06,185.0,80.0,Right
+462116.0,Jean-Clair,Todibo,Jean-Clair Todibo,West Ham United,25,DF,FRA,Defender,0.0,1999-12-30,2025-07-01,192.0,88.0,Right
+564940.0,Soungoutou,Magassa,Soungoutou Magassa,West Ham United,27,MF,FRA,Midfielder,0.0,2003-10-08,2025-08-30,188.0,80.0,Right
+,,,Tomáš Souček,West Ham United,28,MF,CZE,,,,,,,
+214590.0,Aaron,Wan-Bissaka,Aaron Wan-Bissaka,West Ham United,29,DF,COD,Defender,0.0,1997-11-26,2024-08-13,183.0,72.0,Right
+,,,Oliver Scarles,West Ham United,30,DF,ENG,,,,,,,
+490142.0,Freddie,Potts,Freddie Potts,West Ham United,32,MF,ENG,Midfielder,0.0,2003-09-12,2021-12-08,183.0,,Right
+229384.0,Andy,Irving,Andy Irving,West Ham United,39,MF,SCO,Midfielder,0.0,2000-05-13,2023-08-31,190.0,66.0,Left
+490885.0,George,Earthy,George Earthy,West Ham United,40,MF,ENG,Midfielder,0.0,2004-09-05,2023-07-14,180.0,70.0,Right
+565431.0,Callum,Marshall,Callum Marshall,West Ham United,50,FW,NIR,Forward,0.0,2004-11-28,2023-09-26,172.0,,Left
+149065.0,José,Sá,José Sá,Wolverhampton Wanderers,1,GK,POR,Goalkeeper,0.0,1993-01-17,2021-07-15,192.0,84.0,Right
+87835.0,Matt,Doherty,Matt Doherty,Wolverhampton Wanderers,2,DF,IRL,Defender,0.0,1992-01-16,2023-07-20,185.0,80.0,Right
+490721.0,Hugo,Bueno,Hugo Bueno,Wolverhampton Wanderers,3,DF,ESP,Defender,0.0,2002-09-18,2021-01-29,180.0,73.0,Left
+231480.0,Santiago,Bueno,Santiago Bueno,Wolverhampton Wanderers,4,DF,URU,Defender,0.0,1998-11-09,2023-08-31,190.0,76.0,Right
+433312.0,Marshall,Munetsi,Marshall Munetsi,Wolverhampton Wanderers,5,MF,ZIM,Midfielder,0.0,1996-06-22,2025-02-03,188.0,83.0,Right
+,,,David Møller Wolfe,Wolverhampton Wanderers,6,DF,NOR,,,,,,,
+,,,André,Wolverhampton Wanderers,7,MF,BRA,,,,,,,
+,,,João Gomes,Wolverhampton Wanderers,8,MF,BRA,,,,,,,
+,,,Jørgen Strand Larsen,Wolverhampton Wanderers,9,FW,NOR,,,,,,,
+230376.0,Jhon,Arias,Jhon Arias,Wolverhampton Wanderers,10,FW,COL,Midfielder,0.0,1997-09-21,2025-07-24,170.0,77.0,Right
+,,,Hwang Hee-chan,Wolverhampton Wanderers,11,FW,KOR,,,,,,,
+516939.0,Emmanuel,Agbadou,Emmanuel Agbadou,Wolverhampton Wanderers,12,DF,CIV,Defender,0.0,1997-06-17,2025-01-09,192.0,80.0,Right
+488213.0,Tolu,Arokodare,Tolu Arokodare,Wolverhampton Wanderers,14,FW,NGA,Forward,0.0,2000-11-23,2025-09-01,197.0,97.0,Right
+501837.0,Yerson,Mosquera,Yerson Mosquera,Wolverhampton Wanderers,15,DF,COL,Defender,0.0,2001-05-02,2021-06-17,187.0,76.0,Right
+483081.0,Rodrigo,Gomes,Rodrigo Gomes,Wolverhampton Wanderers,21,FW,POR,Defender,0.0,2003-07-07,2024-07-01,175.0,67.0,Right
+497606.0,Tawanda,Chirewa,Tawanda Chirewa,Wolverhampton Wanderers,23,FW,ZIM,Forward,0.0,2003-10-12,2023-12-01,181.0,72.0,Right
+,,,Toti Gomes,Wolverhampton Wanderers,24,DF,POR,,,,,,,
+79602.0,Dan,Bentley,Dan Bentley,Wolverhampton Wanderers,25,GK,ENG,Goalkeeper,0.0,1993-07-13,2023-01-25,188.0,73.0,Right
+441271.0,Ki-Jana,Hoever,Ki-Jana Hoever,Wolverhampton Wanderers,26,DF,NED,Defender,0.0,2002-01-18,2020-09-19,183.0,65.0,Right
+,,,Jean‐Ricner Bellegarde,Wolverhampton Wanderers,27,MF,HAI,,,,,,,
+643135.0,Fer,López,Fer López,Wolverhampton Wanderers,28,MF,ESP,Forward,0.0,2004-05-24,2025-06-20,188.0,76.0,Left
+593001.0,Enso,González,Enso González,Wolverhampton Wanderers,30,FW,PAR,Forward,0.0,2005-01-20,2023-08-31,169.0,69.0,Left
+101982.0,Sam,Johnstone,Sam Johnstone,Wolverhampton Wanderers,31,GK,ENG,Goalkeeper,0.0,1993-03-25,2024-08-30,193.0,85.0,Right
+647671.0,Mateus,Mané,Mateus Mané,Wolverhampton Wanderers,36,FW,ENG,Forward,0.0,2007-09-16,2025-02-24,,,Right
+,,,Ladislav Krejčí,Wolverhampton Wanderers,37,DF,CZE,,,,,,,
+523705.0,Jackson,Tchatchoua,Jackson Tchatchoua,Wolverhampton Wanderers,38,DF,CMR,Defender,0.0,2001-09-14,2025-08-19,186.0,76.0,Right
+531363.0,Nathan,Fraser,Nathan Fraser,Wolverhampton Wanderers,63,FW,IRL,Forward,0.0,2005-02-22,2022-11-05,188.0,82.0,Right

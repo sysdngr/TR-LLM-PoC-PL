@@ -48,9 +48,9 @@ class PremierLeagueSQLAgent:
     def init_schema(self):
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
-            cursor.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='premier_league_players_master'")
+            cursor.execute("SELECT sql FROM sqlite_master WHERE type='table' AND name='all_players_with_details'")
             self.table_schema = cursor.fetchone()[0]
-            cursor.execute("SELECT DISTINCT club FROM premier_league_players_master")
+            cursor.execute("SELECT DISTINCT [Team Name] FROM all_players_with_details")
             self.valid_clubs = [row[0] for row in cursor.fetchall()]
 
     def build_prompt(self, user_query, conversation_history):
@@ -64,9 +64,9 @@ class PremierLeagueSQLAgent:
         return (
             "You are an expert Premier League SQL agent for the 2025/2026 season. "
             "You understand football culture, player information, and common terminology.\n"
-            "You have access to the 'premier_league_players_master' table with this schema:\n"
+            "You have access to the 'all_players_with_details' table with this schema:\n"
             f"{self.table_schema}\n"
-            "Valid club names in the database are:\n"
+            "Valid team names in the database are:\n"
             f"{', '.join(self.valid_clubs)}\n"
             "Guidelines:\n"
             "1. Always identify team references in queries and map them to official club names.\n"

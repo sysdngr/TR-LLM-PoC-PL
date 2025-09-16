@@ -22,7 +22,7 @@ class LLMOrchestrator:
 		self.model      = os.environ.get("OPENAI_MODEL_MAIN")
 		# Initialize conversation history
 		self.conversation_history = []  # List of (user_input, response) tuples
-		self.sql_agent = PremierLeagueSQLAgent("premier_league_players_master.db")
+		self.sql_agent = PremierLeagueSQLAgent("all_players_with_details.db")
 
 	def make_api_call(self, messages, max_tokens):
 		"""
@@ -64,7 +64,7 @@ class LLMOrchestrator:
 			{"role": "system", "content": system_prompt},
 			{"role": "user", "content": user_input}
 		]
-		result = self.make_api_call(messages, max_tokens=128)
+		result = self.make_api_call(messages, max_tokens=2048)
 		print(f"[CLASSIFY] LLM response: {result}")
 		return "sql_required" if "sql_required" in result.lower() else "general"
 
@@ -111,29 +111,51 @@ class LLMOrchestrator:
 			messages.append({"role": "system", "content": self.stringify(context)})
 		messages.append({"role": "user", "content": self.stringify(user_input)})
 
-		response = self.make_api_call(messages, max_tokens=512)
+		response = self.make_api_call(messages, max_tokens=2048)
 		print(f"[GENERAL] Response received: {response[:100]}...")  # First 100 chars
 		return response
 
 	def generate_final_response(self, user_input, sql_query=None, sql_result=None):
 		"""
-		Strictly return SQL results without any speculative follow-up offers or additional commentary.
-		Format the JSON output in a user-friendly way.
+		Use the LLM to decide what to share and how to format the response.
+		Prioritize the SQL result and avoid speculative responses.
 		"""
+		# Build the prompt for the LLM
+		prompt = (
+			"You are an intelligent assistant. Based on the following information, decide what to share with the user and how to format it. "
+			"Use the SQL query result as the only source of truth. Do not speculate, add, or modify any information beyond what is provided in the SQL result.\n\n"
+		)
+		prompt += f"User Question: {user_input}\n\n"
+		if sql_query:
+			prompt += f"Executed SQL Query:\n{sql_query}\n\n"
 		if sql_result:
-			import json
+			prompt += f"SQL Query Result:\n{sql_result}\n\n"
+		prompt += "Conversation History:\n"
+		for prev_input, prev_response in self.conversation_history[-3:]:
+			prompt += f"User: {prev_input}\nAssistant: {prev_response}\n"
+		prompt += "\nProvide a clear and user-friendly response based strictly on the SQL result."
+
+		# Call the LLM with the prompt and set temperature to 0 for deterministic responses
+		response = self.make_api_call(
+			[{"role": "user", "content": prompt}],
+			max_tokens=2048,
+			temperature=0
+		)
+
+		# Validate the LLM's response
+		if "SQL Query Result" not in response:
+			# Fallback to directly formatting the SQL result if the LLM response is not aligned
 			if isinstance(sql_result, dict):
-				# Prettify JSON output for user-friendly display
+				import json
 				formatted_json = json.dumps(sql_result, indent=4)
 				return f"Here is the information you requested:\n\n```json\n{formatted_json}\n```"
 			elif isinstance(sql_result, list):
-				# Handle list results if applicable
 				return f"Here is the list of results:\n\n{', '.join(map(str, sql_result))}"
 			else:
 				return str(sql_result)
-		
-		# Fallback to general query handling only if no SQL result is available
-		return self.handle_general_query(user_input)
+
+		# Return the LLM's response if valid
+		return response
 
 	def process_query(self, user_input):
 		"""

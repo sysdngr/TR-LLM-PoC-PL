@@ -5,9 +5,9 @@
 import pandas as pd
 import sqlite3
 
-csv_filename = 'premier_league_players_master.csv'
-db_filename = 'premier_league_players_master.db'
-table_name = 'premier_league_players_master'
+csv_filename = 'all_players_with_details.csv'
+db_filename = 'all_players_with_details.db'
+table_name = 'all_players_with_details'
 
 df = pd.read_csv(csv_filename)
 conn = sqlite3.connect(db_filename)

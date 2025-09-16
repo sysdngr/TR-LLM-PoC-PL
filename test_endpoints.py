@@ -1,3 +1,6 @@
+#I change my llms every now and then
+#this allows me to quickly test if they are working
+
 import os
 import requests
 

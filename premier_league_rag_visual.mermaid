@@ -1,0 +1,50 @@
+graph TD
+    %% User Interface
+    A[User] --> B[Streamlit UI]
+    B --> C[User Query Input]
+    
+    %% Main LLM Router
+    C --> D[Main LLM<br/>Azure OpenAI]
+    D --> E{Query Classification}
+    E -->|Player Data Query| F[SQL Agent]
+    E -->|General Query| G[Direct Answer]
+    
+    %% SQL Agent Path
+    F --> H[Generate SQL Query]
+    H --> I[(CSV Database<br/>Player Info)]
+    I --> J[Query Results]
+    J --> K[Return Data to Main LLM]
+    K --> D
+    
+    %% Response Generation
+    D --> L[Generate Final Response]
+    G --> L
+    L --> M[Formatted Answer]
+    M --> B
+    B --> N[Display to User]
+    
+    %% Data Structure
+    I --> O["`**CSV Schema:**
+    • PlayerId, Name, FirstName, LastName
+    • Club, Position, LoanStatus
+    • DateOfBirth, JoinedClub
+    • Weight, Height, Nationality
+    • PreferredFoot, ShirtNumber`"]
+    
+    %% Example Queries
+    P["`**Example Queries:**
+    **General:** 'What is offside rule?'
+    **Data:** 'Tell me the players of Manchester United'
+    **Data:** 'What team does Gyökeres play for?'
+    **Data:** 'What position does Robert Sánchez play?'`"] --> C
+    
+    %% Styling
+    classDef userInterface fill:#e1f5fe
+    classDef dataLayer fill:#f3e5f5
+    classDef mainLLM fill:#e8f5e8
+    classDef sqlAgent fill:#fff3e0
+    
+    class A,B,C,N userInterface
+    class I,J,O dataLayer
+    class D,E,F,L,M mainLLM
+    class G,H,K sqlAgent

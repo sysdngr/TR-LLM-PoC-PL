@@ -32,6 +32,15 @@ The system is built around two LLM endpoints:
 
 ---
 
+
+## UI
+
+For the user interface, I opted for **Streamlit**. It’s lightweight and well-suited for quickly building prototypes and testing functionality.  
+In a production setting, this could be replaced with a **React** frontend, which is a more common choice for scalable and maintainable applications.
+
+---
+
+
 ## Design considerations
 
 - Latency: two agents introduce extra round-trips, so answers take slightly longer.  

@@ -1,5 +1,6 @@
-# This script loads a CSV into SQLite to simulate real deployment conditions,
-# so a SQL agent can interact with an actual database as in production.
+# This script loads a CSV file into an SQLite database.
+# It prepares the database for use by the SQL agent, simulating production conditions.
+# Converts the `all_players_with_details.csv` file into a table in `all_players_with_details.db`.
 
 
 import pandas as pd

@@ -1,3 +1,8 @@
+# This module defines the `LLMOrchestrator` class.
+# It manages interactions between the user, the SQL agent, and the Azure OpenAI API.
+# Handles query classification (general vs SQL), executes SQL queries, and generates responses.
+# Maintains conversation history for context-aware responses.
+
 import os
 import requests
 import json

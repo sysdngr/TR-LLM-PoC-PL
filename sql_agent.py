@@ -1,3 +1,8 @@
+# This module defines the `PremierLeagueSQLAgent` class.
+# It connects to an SQLite database and uses Azure OpenAI to process SQL queries.
+# Includes methods for validating environment variables, initializing the database schema,
+# and building prompts for querying Premier League data.
+
 import os
 import sqlite3
 from langchain_openai import AzureChatOpenAI

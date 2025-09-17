@@ -1,3 +1,9 @@
+# This is the entry point for the Streamlit app.
+# It initializes the user interface, handles user interactions, and displays responses.
+# Integrates with the `LLMOrchestrator` to process user queries about Premier League data.
+# Includes custom styling and session state management for a better user experience.
+
+
 import streamlit as st
 import os
 import sys

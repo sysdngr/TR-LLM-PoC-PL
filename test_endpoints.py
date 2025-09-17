@@ -1,3 +1,7 @@
+# This script is used to test the functionality of different LLM endpoints.
+# It sends sample queries to the main, SQL, and Grok LLMs to verify their responses.
+# Useful for debugging and ensuring the endpoints are properly configured.
+
 #I change my llms every now and then
 #this allows me to quickly test if they are working
 

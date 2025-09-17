@@ -11,6 +11,11 @@ except Exception:
 
 from orchestrator import LLMOrchestrator
 
+
+if 'initialized' not in st.session_state:
+    st.session_state.clear()
+    st.session_state['initialized'] = True
+
 # Custom CSS for better styling
 st.markdown("""
 <style>

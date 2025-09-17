@@ -61,6 +61,33 @@ This prototype does not yet include production-level security controls. In a rea
 - **Rate limiting** – to prevent abuse and excessive load  
 
 
+
+
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sysdngr/TR-LLM-PoC-PL.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd TR-LLM-PoC-PL
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the Streamlit app:
+   ```bash
+   streamlit run main.py
+   ```
+
 ---
 
 ## Notes
@@ -71,4 +98,4 @@ If this were to move towards production, the next steps would likely include:
 - More robust data pipelines that could scale beyond the Premier League to cover multiple leagues.  
 - Optimizations for latency and caching so responses feel faster and more seamless.  
 
-<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/a22ed0e4-e5d1-40bf-b492-33a5a3e7f5a7" /># 
+<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/a22ed0e4-e5d1-40bf-b492-33a5a3e7f5a7" />#

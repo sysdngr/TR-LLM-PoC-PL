@@ -1,4 +1,4 @@
-# TransferRoom LLM Challenge – Premier League Q&A (2025/26)
+<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/a22ed0e4-e5d1-40bf-b492-33a5a3e7f5a7" /># TransferRoom LLM Challenge – Premier League Q&A (2025/26)
 
 This was built as part of a technical challenge for TransferRoom.  
 It demonstrates how a large language model can be used to answer basic questions about Premier League players for the 2025/26 season.
@@ -54,7 +54,8 @@ In a production setting, this could be replaced with a **React** frontend, which
 
 This prototype does not yet include production-level security controls. In a real deployment, measures would need to be added for:  
 
-- **SQL injection protection** – query safety and sanitization  
+- **SQL injection protection**
+ – query safety and sanitization  
 - **Prompt injection defenses** – guardrails against malicious instructions targeting the LLM  
 - **Rate limiting** – to prevent abuse and excessive load  
 
@@ -68,3 +69,6 @@ If this were to move towards production, the next steps would likely include:
 
 - More robust data pipelines that could scale beyond the Premier League to cover multiple leagues.  
 - Optimizations for latency and caching so responses feel faster and more seamless.  
+
+<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/3be32f42-2ec6-40d3-bd6a-bbfc5d0be336" />
+

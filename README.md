@@ -25,10 +25,11 @@ The system is built around two LLM endpoints:
 
 - **Orchestrator (GPT-5-chat)**  
   Receives user queries, interprets intent, and decides whether the question can be answered directly or requires database access.
+  If sql query/result is shared, it uses this information to prepare the final response. 
 
 - **SQL Agent (GPT-4o)**  
-  When called, the orchestrator passes the query here. The SQL agent formulates an SQL query, executes it against the player database, and returns the results.
-  The orchestrator then uses this information to prepare the final response. 
+  When called, the orchestrator passes the query here. The SQL agent formulates an SQL query, executes it against the player database, and returns the results to the orchestrator
+  
 
 ---
 
@@ -62,30 +63,6 @@ This prototype does not yet include production-level security controls. In a rea
 
 ---
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sysdngr/TR-LLM-PoC-PL.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd TR-LLM-PoC-PL
-   ```
-
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the Streamlit app:
-   ```bash
-   streamlit run main.py
-   ```
-
----
-
 ## Notes
 
 This is a prototype, meant to show the overall approach rather than a production-ready system.  
@@ -94,4 +71,4 @@ If this were to move towards production, the next steps would likely include:
 - More robust data pipelines that could scale beyond the Premier League to cover multiple leagues.  
 - Optimizations for latency and caching so responses feel faster and more seamless.  
 
-<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/a22ed0e4-e5d1-40bf-b492-33a5a3e7f5a7" />#
+<img width="2526" height="2104" alt="Screenshot 2025-09-16 at 14-15-07 " src="https://github.com/user-attachments/assets/a22ed0e4-e5d1-40bf-b492-33a5a3e7f5a7" /># 

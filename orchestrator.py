@@ -138,7 +138,7 @@ class LLMOrchestrator:
 		# Call the LLM with the prompt and set temperature to 0 for deterministic responses
 		response = self.make_api_call(
 			[{"role": "user", "content": prompt}],
-			max_tokens=2048,
+			max_tokens=10240,
 			temperature=0
 		)
 

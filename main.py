@@ -32,11 +32,16 @@ st.markdown("""
     }
     
     .user-message {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 0.8rem;
-        border-radius: 15px 15px 5px 15px;
-        margin: 0.5rem 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        padding: 0.8rem !important;
+        border-radius: 15px 15px 5px 15px !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    .user-message p, .user-message div {
+        color: white !important;
+        margin: 0 !important;
     }
     
     .assistant-message {
@@ -69,6 +74,8 @@ st.markdown("""
         border-radius: 20px;
         padding: 0.5rem 2rem;
         font-weight: 500;
+        height: 3rem;
+        margin-top: 1.5rem;
     }
     
     .footer {
@@ -221,7 +228,7 @@ else:
             <li>📋 Players by position, age, or nationality</li>
             <li>🔍 Search and filter player information</li>
         </ul>
-        <p><strong>Try asking:</strong> "Show me all Arsenal players" or "List all Brazilian forwards"</p>
+        <p><strong>Try asking:</strong> "Show me all Arsenal players for 25/26 season" or "List all Brazilian forwards for 25/26 season"</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -243,7 +250,7 @@ with col1:
         "💭 Ask me anything about Premier League...", 
         key="input_value", 
         on_change=submit,
-        placeholder="e.g., Show me all Arsenal forwards"
+        placeholder="e.g., Show me all Chelsea defenders in 25/26 season"
     )
 with col2:
     if st.button("Send 🚀", use_container_width=True):
@@ -252,6 +259,6 @@ with col2:
 # Footer
 st.markdown("""
 <div class="footer">
-    <p>⚽ Powered by Premier League 2025/2026 data | Built with Streamlit</p>
+    <p>⚽ Powered by Premier League 2025/2026 data</p>
 </div>
 """, unsafe_allow_html=True)

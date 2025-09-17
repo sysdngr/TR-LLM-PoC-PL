@@ -124,6 +124,7 @@ class LLMOrchestrator:
 		prompt = (
 			"You are an intelligent assistant. Based on the following information, decide what to share with the user and how to format it. "
 			"Use the SQL query result as the only source of truth. Do not speculate, add, or modify any information beyond what is provided in the SQL result.\n\n"
+			"SQL query result is always for 25/26 season of premier league players.\n\n"
 		)
 		prompt += f"User Question: {user_input}\n\n"
 		if sql_query:
@@ -138,7 +139,7 @@ class LLMOrchestrator:
 		# Call the LLM with the prompt and set temperature to 0 for deterministic responses
 		response = self.make_api_call(
 			[{"role": "user", "content": prompt}],
-			max_tokens=10240,
+			max_tokens=10420,
 			temperature=0
 		)
 

@@ -1,0 +1,7 @@
+requests
+streamlit
+dotenv
+openai
+langchain
+pandas
+sqlite3

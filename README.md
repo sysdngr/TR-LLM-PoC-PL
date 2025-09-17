@@ -49,6 +49,18 @@ In a production setting, this could be replaced with a **React** frontend, which
 
 ---
 
+
+## Security
+
+This prototype does not yet include production-level security controls. In a real deployment, measures would need to be added for:  
+
+- **SQL injection protection** – query safety and sanitization  
+- **Prompt injection defenses** – guardrails against malicious instructions targeting the LLM  
+- **Rate limiting** – to prevent abuse and excessive load  
+
+
+---
+
 ## Notes
 
 This is a prototype, meant to show the overall approach rather than a production-ready system.  

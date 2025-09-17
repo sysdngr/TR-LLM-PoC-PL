@@ -1,7 +1,12 @@
-requests
-streamlit
-dotenv
-openai
-langchain
-pandas
+# Required dependencies for the project
+requests==2.31.0
+streamlit==1.25.0
+python-dotenv==1.0.0
+openai==0.27.8
+langchain==0.0.200
+langchain_community==0.0.5
+langchain_openai==0.0.3
+pandas==1.5.3
+
+# sqlite3 is part of the Python standard library (since Python 2.5) and does not need installation.
 sqlite3

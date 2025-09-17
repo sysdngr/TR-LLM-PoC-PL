@@ -83,7 +83,12 @@ This prototype does not yet include production-level security controls. In a rea
    pip install -r requirements.txt
    ```
 
-4. Run the Streamlit app:
+4. Create the SQLite database:
+   ```bash
+   python csv_to_sqlite.py
+   ```
+
+5. Run the Streamlit app:
    ```bash
    streamlit run main.py
    ```

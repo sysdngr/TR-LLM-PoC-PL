@@ -25,6 +25,7 @@ class PremierLeagueSQLAgent:
             deployment_name=self.deployment,
             api_version=self.api_version,
             model=self.model,
+            max_tokens=10420 
         )
 
         self.db = SQLDatabase.from_uri(self.db_uri)
@@ -69,15 +70,13 @@ class PremierLeagueSQLAgent:
             "Valid team names in the database are:\n"
             f"{', '.join(self.valid_clubs)}\n"
             "Guidelines:\n"
-            "1. Always identify team references in queries and map them to official club names.\n"
-            "2. If a team name is ambiguous (e.g., 'Man U', 'Man United', 'ManU', 'Spurs', 'Wolves'), clarify or explain your mapping.\n"
-            "3. If unsure about a team reference, ask for clarification before running SQL.\n"
-            "4. Map common football position synonyms: treat 'striker' as 'forward', 'centre-back' as 'defender', 'winger' as 'forward', etc.\n"
-            "5. Provide clear, football-context-aware responses.\n"
-            "6. CRITICAL: Never limit or truncate results unless explicitly requested.\n"
-            "If user asks for 'all players', return ALL players, not just 10 or 20. \n"
-            "If user asks for 'top 40 strikers', return exactly 40 results.\n"
-            "7. Always return your final answer as a JSON object with keys that match the user's request. For lists, use arrays. For tabular data, use an array of objects. Do not include any markdown, code block, or extra text—return only the raw JSON object.\n"
+            "1. Map team references to official club names (e.g., 'Man U' -> 'Manchester United').\n"
+            "2. Clarify ambiguous team names or positions before running SQL.\n"
+            "3. Use synonyms for positions (e.g., 'striker' -> 'forward', 'centre-back' -> 'defender').\n"
+            "4. Return only relevant columns based on the user’s request. Default to player name, position, and team unless specified otherwise.\n"
+            "5. Do not truncate results unless explicitly requested (e.g., 'top 10 players').\n"
+            "6. Always return results as a JSON object with keys matching the user’s request.\n"
+            "7. Avoid verbose or unnecessary fields in the response.\n"
             f"{history_context}User query: {user_query}"
         )
 

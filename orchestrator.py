@@ -122,7 +122,7 @@ class LLMOrchestrator:
 		"""
 		# Build the prompt for the LLM
 		prompt = (
-			"You are an intelligent assistant. Based on the following information, decide what to share with the user and how to format it. "
+			"You are an intelligent assistant. Based on the sql query information, decide what to share with the user and how to format it. "
 			"Use the SQL query result as the only source of truth. Do not speculate, add, or modify any information beyond what is provided in the SQL result.\n\n"
 			"SQL query result is always for 25/26 season of premier league players.\n\n"
 		)
@@ -132,10 +132,10 @@ class LLMOrchestrator:
 		if sql_result:
 			prompt += f"SQL Query Result:\n{sql_result}\n\n"
 		prompt += "Conversation History:\n"
-		for prev_input, prev_response in self.conversation_history[-3:]:
+		for prev_input, prev_response in self.conversation_history[-2:]:
 			prompt += f"User: {prev_input}\nAssistant: {prev_response}\n"
 		prompt += "\nProvide a clear and user-friendly response based strictly on the SQL result."
-
+		
 		# Call the LLM with the prompt and set temperature to 0 for deterministic responses
 		response = self.make_api_call(
 			[{"role": "user", "content": prompt}],
